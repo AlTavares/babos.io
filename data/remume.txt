@@ -1,0 +1,87 @@
+A.1. ANALGÉSICOS, ANTIESPASMÓDICOS, ANTIINFLAMATÓRIOS E.
+ANTIGOTOSOS
+A.1.1 Analgésicos não opióides (ácido acetilsalicílico; dipirona sódica; ibuprofeno; paracetamol).
+A.1.2 Medicamentos antienxaqueca (paracetamol; propranolol; amitriptilina).
+A.1.3 Antiinflamatórios esteróides (dexametasona, prednisona).
+A.1.4 Antiinflamatórios não esteróides (ibuprofeno).
+A.1.5 Antigotosos (ALOPURINOL)
+
+A.2. ANTIALÉRGICOS E MEDICAMENTOS USADOS EM ANAFILAXIA
+(Epinefrina; prometazina; loratadina, DEXCLORFENIRAMINA).
+
+A.3. ANTIINFECCIOSOS DE USO GERAL
+A.3.1. Antibacterianos
+A.3.1.1. Aminoglicosídeos (neomicina+bacitracina; GENTAMICINA).
+A.3.1.2. Macrolídeos e Lincosamidas (eritromicina; AZITROMICINA).
+A.3.1.3. Penicilinas (amoxicilina; AMOXICILINA + CLAV. DE POTÁSSIO; ampicilina; benzilpenicilina G Benzatina; benzilpenicilina G Potássica).
+A.3.1.4. FLUORQUINOLONAS (CIPROFLOXACINO)
+A.3.1.5. Sulfas e antissépticos urinários (sulfadiazina; sulfametoxazol + trimetoprima; NITROFURANTOÍNA).
+A.3.1.6. Tetraciclinas (doxiciclina).
+A.3.1.7. Outros (metronidazol, ACICLOVIR).
+A.3.1.8 CEFALOSPORINAS (AXETILCEFUROXIMA, CEFALEXINA).
+A.3.2. Antifúngicos (nistatina; miconazol, FLUCONAZOL).
+
+A.4. ANTIINFECCIOSOS DE USO ESPECIAL E ANTIPARASITÁRIOS
+A.4.1. Endemias focais
+A.4.1.1. Filariose (ivermectina).
+A.4.1.2. Peste (doxiciclina; pirimetamina; sulfadiazina, ESPIRAMICINA).
+A.4.1.3. Tracoma (doxiciclina; eritromicina).
+A.4.2. Grandes endemias
+A.4.2.1. Hanseníase (doxiciclina).
+A.4.2.2. Parasitoses intestinais (metronidazol, ALBENDAZOL).
+
+A.5. NUTRIENTES
+A.5.1. Eletrólitos (reidratante oral).
+A.5.2. Minerais (sulfato ferroso).
+A.5.3. Vitaminas (ácido fólico; vitamina A e D).
+
+B. MEDICAMENTOS POR GRUPOS ANATÔMICOS
+
+B.1. CARDIOVASCULAR
+B.1.1. Antianginosos (ácido acetilsalicílico; dinitrato de isossorbida; tartarato de metoprolol; propranolol).
+B.1.2. Antiarrítmicos (propranolol; tartarato de metoprolol).
+B.1.3. Anti-hipertensivos
+B.1.3.1. Bloqueadores adrenérgicos (metildopa; tartarato de metoprolol; propranolol, ATENOLOL).
+B.1.3.2. Bloqueadores de canal de cálcio (anlodipina, VERAPAMIL).
+B.1.3.3. Diuréticos (hidroclorotiazida).
+B.1.3.4. Inibidores da enzima conversora da angiotensina (captopril, ENALAPRIL).
+B.1.4. Cardiotônicos (digoxina).
+B.1.5. Diuréticos (furosemida; hidroclorotiazida, ESPIRONOLACTONA).
+B.1.6. Medicamentos usados no choque vascular (epinefrina).
+
+B.2. DIGESTIVO
+B.2.1. Antiácidos (hidróxido de alumínio). EXCLUÍDO
+B.2.2. Antieméticos (metoclopramida; prometazina).
+B.2.3. Antiespasmódicos (hioscina).
+B.2.4. Antimicrobianos (amoxicilina).
+B.2.5. Antisecretores (omeprazol, RANITIDINA).
+
+B.3. ENDÓCRINO E REPRODUTOR
+B.3.1. Hormônios sexuais e antagonistas (estradiol, valerato + noretisterona, enantato; estrógenos conjugados; etinilestradiol + levonorgestrel; medroxiprogesterona, acetato; noretisterona).
+B.3.2. Hormônios Tireoideanos e adjuvantes (levotiroxina; propranolol).
+B.3.3. Insulinas e outros agentes antidiabéticos (glibenclamida; insulina NPH; metformina).
+
+B.4. HEMATOPOIÉTICO
+B.4.1. Antianêmico (ácido fólico; sulfato ferroso).
+B.4.2. Antiplaquetários (ácido acetilsalicílico).
+B.4.3 Anticoagulantes (varfarina).
+
+B.5. NERVOSO CENTRAL
+B.5.1. Anticonvulsivantes (ácido valpróico (valproato de sódio); carbamazepina; diazepam; fenitoína; fenobarbital, CLONAZEPAM).
+B.5.2. Antidepressivos e antimaníacos (cloridrato de imipramina; carbonato de lítio, FLUOXETINA).
+B.5.3. Antipsicóticos (clorpromazina, haloperidol).
+B.5.4. Antiparkinsonianos (biperideno, LEVODOPA+BENSERAZIDA, LEVODOPA+CARBIDOPA). 
+
+B.6. PELE E MUCOSAS
+B.6.1. Antiinfecciosos tópicos (metronidazol; miconazol; neomicina+bacitracina).
+B.6.2. Antiinflamatórios tópicos e antipruriginosos (dexametasona).
+B.6.3. Escabicidas e pediculicidas (permetrina).
+
+B.8. RESPIRATÓRIO
+B.8.1. Broncodilatadores, antiasmáticos e rinites alérgicas (beclometasona; budesonida; epinefrina/adrenalina; fenoterol; prednisona; salbutamol, PREDNISOLONA).
+B.8.2. Preparações nasais (cloreto de sódio/benzalcônio).
+
+C.1. ANESTÉSICOS
+C.1.1. Fármacos adjuvantes de anestésicos gerais (diazepam)
+C.2. Imunossupressores (prednisona)
+C.3. Reguladores de homeostase mineral e metabolismo ósseo (carbonato de cálcio, ALENDRONATO DE SÓDIO)
