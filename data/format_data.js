@@ -20,31 +20,43 @@ function format() {
         for (let prop in element) {
             if (prop == 'references') { continue }
             let refs = extractReferences(element[prop])
-            element.references[prop] = refs
+            element.references[prop] = refs.refs
+            element[prop] = refs.text
         }
-        // console.log(element.references)
     }
-    console.log(allRefs.size)
+    let output = JSON.stringify(data, null, 4)
+    // console.log(output)
+    fs.writeFileSync('datav2.json', output)
 }
 
 /**
  * @param {string} element
  */
 function extractReferences(element) {
-    return element.replace(/[()]/g, '').split('\n').pop().split(';').map(trimAndAddToSet)
+    let index = element.lastIndexOf('(')
+    let text = element.substring(0, index)
+    let refs = element.substring(index).split(';').map(trimAndAddToSet)
+    console.log(element, '\n', refs)
+    return { text: text, refs: refs }
 }
 
 function trimAndAddToSet(string) {
-    let s = string.trim()
+    let s = string.replace(/[()]/g, '').trim()
     allRefs.add(s)
     return s
 }
 
 function saveRefs() {
-    fs.writeFileSync('references.json', JSON.stringify(allRefs, null, 4))
+    let array = [...allRefs].sort()
+    let output = JSON.stringify(array, null, 4)
+    fs.writeFileSync('references.json', output)
 }
 
 function run() {
+    console.log('Formatting...')
     format()
     saveRefs()
+    console.log('Finished!')
 }
+
+run()
