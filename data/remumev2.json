@@ -1,0 +1,537 @@
+[
+    {
+        "id": "A.1",
+        "description": "ANALGÉSICOS, ANTIESPASMÓDICOS, ANTIINFLAMATÓRIOS E ANTIGOTOSOS",
+        "medicines": []
+    },
+    {
+        "id": "A.1.1",
+        "description": "Analgésicos não opióides",
+        "medicines": [
+            "Ácido acetilsalicílico",
+            "Dipirona sódica",
+            "Ibuprofeno",
+            "Paracetamol"
+        ]
+    },
+    {
+        "id": "A.1.2",
+        "description": "Medicamentos antienxaqueca",
+        "medicines": [
+            "Paracetamol",
+            "Propranolol",
+            "Amitriptilina"
+        ]
+    },
+    {
+        "id": "A.1.3",
+        "description": "Antiinflamatórios esteróides",
+        "medicines": [
+            "Dexametasona",
+            "Prednisona"
+        ]
+    },
+    {
+        "id": "A.1.4",
+        "description": "Antiinflamatórios não esteróides",
+        "medicines": [
+            "Ibuprofeno"
+        ]
+    },
+    {
+        "id": "A.1.5",
+        "description": "Antigotosos",
+        "medicines": [
+            "Alopurinol"
+        ]
+    },
+    {
+        "id": "A.2",
+        "description": "ANTIALÉRGICOS E MEDICAMENTOS USADOS EM ANAFILAXIA",
+        "medicines": [
+            "Epinefrina",
+            "Prometazina",
+            "Loratadina",
+            "Dexclorfeniramina"
+        ]
+    },
+    {
+        "id": "A.3",
+        "description": "ANTIINFECCIOSOS DE USO GERAL",
+        "medicines": []
+    },
+    {
+        "id": "A.3.1",
+        "description": "Antibacterianos",
+        "medicines": []
+    },
+    {
+        "id": "A.3.1.1",
+        "description": "Aminoglicosídeos",
+        "medicines": [
+            "Neomicina+bacitracina",
+            "Gentamicina"
+        ]
+    },
+    {
+        "id": "A.3.1.2",
+        "description": "Macrolídeos e Lincosamidas",
+        "medicines": [
+            "Eritromicina",
+            "Azitromicina"
+        ]
+    },
+    {
+        "id": "A.3.1.3",
+        "description": "Penicilinas",
+        "medicines": [
+            "Amoxicilina",
+            "Amoxicilina + clav de potássio",
+            "Ampicilina",
+            "Benzilpenicilina g benzatina",
+            "Benzilpenicilina g potássica"
+        ]
+    },
+    {
+        "id": "A.3.1.4",
+        "description": "FLUORQUINOLONAS",
+        "medicines": [
+            "Ciprofloxacino"
+        ]
+    },
+    {
+        "id": "A.3.1.5",
+        "description": "Sulfas e antissépticos urinários",
+        "medicines": [
+            "Sulfadiazina",
+            "Sulfametoxazol + trimetoprima",
+            "Nitrofurantoína"
+        ]
+    },
+    {
+        "id": "A.3.1.6",
+        "description": "Tetraciclinas",
+        "medicines": [
+            "Doxiciclina"
+        ]
+    },
+    {
+        "id": "A.3.1.7",
+        "description": "Outros",
+        "medicines": [
+            "Metronidazol",
+            "Aciclovir"
+        ]
+    },
+    {
+        "id": "A.3.1.8",
+        "description": "CEFALOSPORINAS",
+        "medicines": [
+            "Axetilcefuroxima",
+            "Cefalexina"
+        ]
+    },
+    {
+        "id": "A.3.2",
+        "description": "Antifúngicos",
+        "medicines": [
+            "Nistatina",
+            "Miconazol",
+            "Fluconazol"
+        ]
+    },
+    {
+        "id": "A.4",
+        "description": "ANTIINFECCIOSOS DE USO ESPECIAL E ANTIPARASITÁRIOS",
+        "medicines": []
+    },
+    {
+        "id": "A.4.1",
+        "description": "Endemias focais",
+        "medicines": []
+    },
+    {
+        "id": "A.4.1.1",
+        "description": "Filariose",
+        "medicines": [
+            "Ivermectina"
+        ]
+    },
+    {
+        "id": "A.4.1.2",
+        "description": "Peste",
+        "medicines": [
+            "Doxiciclina",
+            "Pirimetamina",
+            "Sulfadiazina",
+            "Espiramicina"
+        ]
+    },
+    {
+        "id": "A.4.1.3",
+        "description": "Tracoma",
+        "medicines": [
+            "Doxiciclina",
+            "Eritromicina"
+        ]
+    },
+    {
+        "id": "A.4.2",
+        "description": "Grandes endemias",
+        "medicines": []
+    },
+    {
+        "id": "A.4.2.1",
+        "description": "Hanseníase",
+        "medicines": [
+            "Doxiciclina"
+        ]
+    },
+    {
+        "id": "A.4.2.2",
+        "description": "Parasitoses intestinais",
+        "medicines": [
+            "Metronidazol",
+            "Albendazol"
+        ]
+    },
+    {
+        "id": "A.5",
+        "description": "NUTRIENTES",
+        "medicines": []
+    },
+    {
+        "id": "A.5.1",
+        "description": "Eletrólitos",
+        "medicines": [
+            "Reidratante oral"
+        ]
+    },
+    {
+        "id": "A.5.2",
+        "description": "Minerais",
+        "medicines": [
+            "Sulfato ferroso"
+        ]
+    },
+    {
+        "id": "A.5.3",
+        "description": "Vitaminas",
+        "medicines": [
+            "Ácido fólico",
+            "Vitamina a e d"
+        ]
+    },
+    {
+        "id": "B.1",
+        "description": "CARDIOVASCULAR",
+        "medicines": []
+    },
+    {
+        "id": "B.1.1",
+        "description": "Antianginosos",
+        "medicines": [
+            "Ácido acetilsalicílico",
+            "Dinitrato de isossorbida",
+            "Tartarato de metoprolol",
+            "Propranolol"
+        ]
+    },
+    {
+        "id": "B.1.2",
+        "description": "Antiarrítmicos",
+        "medicines": [
+            "Propranolol",
+            "Tartarato de metoprolol"
+        ]
+    },
+    {
+        "id": "B.1.3",
+        "description": "Anti-hipertensivos",
+        "medicines": []
+    },
+    {
+        "id": "B.1.3.1",
+        "description": "Bloqueadores adrenérgicos",
+        "medicines": [
+            "Metildopa",
+            "Tartarato de metoprolol",
+            "Propranolol",
+            "Atenolol"
+        ]
+    },
+    {
+        "id": "B.1.3.2",
+        "description": "Bloqueadores de canal de cálcio",
+        "medicines": [
+            "Anlodipina",
+            "Verapamil"
+        ]
+    },
+    {
+        "id": "B.1.3.3",
+        "description": "Diuréticos",
+        "medicines": [
+            "Hidroclorotiazida"
+        ]
+    },
+    {
+        "id": "B.1.3.4",
+        "description": "Inibidores da enzima conversora da angiotensina",
+        "medicines": [
+            "Captopril",
+            "Enalapril"
+        ]
+    },
+    {
+        "id": "B.1.4",
+        "description": "Cardiotônicos",
+        "medicines": [
+            "Digoxina"
+        ]
+    },
+    {
+        "id": "B.1.5",
+        "description": "Diuréticos",
+        "medicines": [
+            "Furosemida",
+            "Hidroclorotiazida",
+            "Espironolactona"
+        ]
+    },
+    {
+        "id": "B.1.6",
+        "description": "Medicamentos usados no choque vascular",
+        "medicines": [
+            "Epinefrina"
+        ]
+    },
+    {
+        "id": "B.2",
+        "description": "DIGESTIVO",
+        "medicines": []
+    },
+    {
+        "id": "B.2.1",
+        "description": "Antiácidos",
+        "medicines": [
+            "Hidróxido de alumínio excluído"
+        ]
+    },
+    {
+        "id": "B.2.2",
+        "description": "Antieméticos",
+        "medicines": [
+            "Metoclopramida",
+            "Prometazina"
+        ]
+    },
+    {
+        "id": "B.2.3",
+        "description": "Antiespasmódicos",
+        "medicines": [
+            "Hioscina"
+        ]
+    },
+    {
+        "id": "B.2.4",
+        "description": "Antimicrobianos",
+        "medicines": [
+            "Amoxicilina"
+        ]
+    },
+    {
+        "id": "B.2.5",
+        "description": "Antisecretores",
+        "medicines": [
+            "Omeprazol",
+            "Ranitidina"
+        ]
+    },
+    {
+        "id": "B.3",
+        "description": "ENDÓCRINO E REPRODUTOR",
+        "medicines": []
+    },
+    {
+        "id": "B.3.1",
+        "description": "Hormônios sexuais e antagonistas",
+        "medicines": [
+            "Estradiol",
+            "Valerato + noretisterona",
+            "Enantato",
+            "Estrógenos conjugados",
+            "Etinilestradiol + levonorgestrel",
+            "Medroxiprogesterona",
+            "Acetato",
+            "Noretisterona"
+        ]
+    },
+    {
+        "id": "B.3.2",
+        "description": "Hormônios Tireoideanos e adjuvantes",
+        "medicines": [
+            "Levotiroxina",
+            "Propranolol"
+        ]
+    },
+    {
+        "id": "B.3.3",
+        "description": "Insulinas e outros agentes antidiabéticos",
+        "medicines": [
+            "Glibenclamida",
+            "Insulina nph",
+            "Metformina"
+        ]
+    },
+    {
+        "id": "B.4",
+        "description": "HEMATOPOIÉTICO",
+        "medicines": []
+    },
+    {
+        "id": "B.4.1",
+        "description": "Antianêmico",
+        "medicines": [
+            "Ácido fólico",
+            "Sulfato ferroso"
+        ]
+    },
+    {
+        "id": "B.4.2",
+        "description": "Antiplaquetários",
+        "medicines": [
+            "Ácido acetilsalicílico"
+        ]
+    },
+    {
+        "id": "B.4.3",
+        "description": "Anticoagulantes",
+        "medicines": [
+            "Varfarina"
+        ]
+    },
+    {
+        "id": "B.5",
+        "description": "NERVOSO CENTRAL",
+        "medicines": []
+    },
+    {
+        "id": "B.5.1",
+        "description": "Anticonvulsivantes (Ácido valpróico",
+        "medicines": [
+            "Valproato de sódio",
+            "Carbamazepina",
+            "Diazepam",
+            "Fenitoína",
+            "Fenobarbital",
+            "Clonazepam"
+        ]
+    },
+    {
+        "id": "B.5.2",
+        "description": "Antidepressivos e antimaníacos",
+        "medicines": [
+            "Cloridrato de imipramina",
+            "Carbonato de lítio",
+            "Fluoxetina"
+        ]
+    },
+    {
+        "id": "B.5.3",
+        "description": "Antipsicóticos",
+        "medicines": [
+            "Clorpromazina",
+            "Haloperidol"
+        ]
+    },
+    {
+        "id": "B.5.4",
+        "description": "Antiparkinsonianos",
+        "medicines": [
+            "Biperideno",
+            "Levodopa+benserazida",
+            "Levodopa+carbidopa"
+        ]
+    },
+    {
+        "id": "B.6",
+        "description": "PELE E MUCOSAS",
+        "medicines": []
+    },
+    {
+        "id": "B.6.1",
+        "description": "Antiinfecciosos tópicos",
+        "medicines": [
+            "Metronidazol",
+            "Miconazol",
+            "Neomicina+bacitracina"
+        ]
+    },
+    {
+        "id": "B.6.2",
+        "description": "Antiinflamatórios tópicos e antipruriginosos",
+        "medicines": [
+            "Dexametasona"
+        ]
+    },
+    {
+        "id": "B.6.3",
+        "description": "Escabicidas e pediculicidas",
+        "medicines": [
+            "Permetrina"
+        ]
+    },
+    {
+        "id": "B.8",
+        "description": "RESPIRATÓRIO",
+        "medicines": []
+    },
+    {
+        "id": "B.8.1",
+        "description": "Broncodilatadores, antiasmáticos e rinites alérgicas",
+        "medicines": [
+            "Beclometasona",
+            "Budesonida",
+            "Epinefrina/adrenalina",
+            "Fenoterol",
+            "Prednisona",
+            "Salbutamol",
+            "Prednisolona"
+        ]
+    },
+    {
+        "id": "B.8.2",
+        "description": "Preparações nasais",
+        "medicines": [
+            "Cloreto de sódio/benzalcônio"
+        ]
+    },
+    {
+        "id": "C.1",
+        "description": "ANESTÉSICOS",
+        "medicines": []
+    },
+    {
+        "id": "C.1.1",
+        "description": "Fármacos adjuvantes de anestésicos gerais",
+        "medicines": [
+            "Diazepam"
+        ]
+    },
+    {
+        "id": "C.2",
+        "description": "Imunossupressores",
+        "medicines": [
+            "Prednisona"
+        ]
+    },
+    {
+        "id": "C.3",
+        "description": "Reguladores de homeostase mineral e metabolismo ósseo",
+        "medicines": [
+            "Carbonato de cálcio",
+            "Alendronato de sódio"
+        ]
+    }
+]

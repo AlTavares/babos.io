@@ -1,0 +1,286 @@
+[
+    {
+        "id": "A.1",
+        "description": "ANALGÉSICOS, ANTIESPASMÓDICOS, ANTIINFLAMATÓRIOS E ANTIGOTOSOS"
+    },
+    {
+        "id": "A.1.1",
+        "description": "Analgésicos não opióides (Ácido acetilsalicílico; dipirona sódica; ibuprofeno; paracetamol)."
+    },
+    {
+        "id": "A.1.2",
+        "description": "Medicamentos antienxaqueca (paracetamol; propranolol; amitriptilina)."
+    },
+    {
+        "id": "A.1.3",
+        "description": "Antiinflamatórios esteróides (dexametasona, prednisona)."
+    },
+    {
+        "id": "A.1.4",
+        "description": "Antiinflamatórios não esteróides (ibuprofeno)."
+    },
+    {
+        "id": "A.1.5",
+        "description": "Antigotosos (ALOPURINOL)"
+    },
+    {
+        "id": "A.2",
+        "description": "ANTIALÉRGICOS E MEDICAMENTOS USADOS EM ANAFILAXIA (Epinefrina; prometazina; loratadina, DEXCLORFENIRAMINA)."
+    },
+    {
+        "id": "A.3",
+        "description": "ANTIINFECCIOSOS DE USO GERAL"
+    },
+    {
+        "id": "A.3.1",
+        "description": "Antibacterianos"
+    },
+    {
+        "id": "A.3.1.1",
+        "description": "Aminoglicosídeos (neomicina+bacitracina; GENTAMICINA)."
+    },
+    {
+        "id": "A.3.1.2",
+        "description": "Macrolídeos e Lincosamidas (eritromicina; AZITROMICINA)."
+    },
+    {
+        "id": "A.3.1.3",
+        "description": "Penicilinas (amoxicilina; AMOXICILINA + CLAV DE POTÁSSIO; ampicilina; benzilpenicilina G Benzatina; benzilpenicilina G Potássica)."
+    },
+    {
+        "id": "A.3.1.4",
+        "description": "FLUORQUINOLONAS (CIPROFLOXACINO)"
+    },
+    {
+        "id": "A.3.1.5",
+        "description": "Sulfas e antissépticos urinários (sulfadiazina; sulfametoxazol + trimetoprima; NITROFURANTOÍNA)."
+    },
+    {
+        "id": "A.3.1.6",
+        "description": "Tetraciclinas (doxiciclina)."
+    },
+    {
+        "id": "A.3.1.7",
+        "description": "Outros (metronidazol, ACICLOVIR)."
+    },
+    {
+        "id": "A.3.1.8",
+        "description": "CEFALOSPORINAS (AXETILCEFUROXIMA, CEFALEXINA)."
+    },
+    {
+        "id": "A.3.2",
+        "description": "Antifúngicos (nistatina; miconazol, FLUCONAZOL)."
+    },
+    {
+        "id": "A.4",
+        "description": "ANTIINFECCIOSOS DE USO ESPECIAL E ANTIPARASITÁRIOS"
+    },
+    {
+        "id": "A.4.1",
+        "description": "Endemias focais"
+    },
+    {
+        "id": "A.4.1.1",
+        "description": "Filariose (ivermectina)."
+    },
+    {
+        "id": "A.4.1.2",
+        "description": "Peste (doxiciclina; pirimetamina; sulfadiazina, ESPIRAMICINA)."
+    },
+    {
+        "id": "A.4.1.3",
+        "description": "Tracoma (doxiciclina; eritromicina)."
+    },
+    {
+        "id": "A.4.2",
+        "description": "Grandes endemias"
+    },
+    {
+        "id": "A.4.2.1",
+        "description": "Hanseníase (doxiciclina)."
+    },
+    {
+        "id": "A.4.2.2",
+        "description": "Parasitoses intestinais (metronidazol, ALBENDAZOL)."
+    },
+    {
+        "id": "A.5",
+        "description": "NUTRIENTES"
+    },
+    {
+        "id": "A.5.1",
+        "description": "Eletrólitos (reidratante oral)."
+    },
+    {
+        "id": "A.5.2",
+        "description": "Minerais (sulfato ferroso)."
+    },
+    {
+        "id": "A.5.3",
+        "description": "Vitaminas (Ácido fólico; vitamina A e D)."
+    },
+    {
+        "id": "B.1",
+        "description": "CARDIOVASCULAR"
+    },
+    {
+        "id": "B.1.1",
+        "description": "Antianginosos (Ácido acetilsalicílico; dinitrato de isossorbida; tartarato de metoprolol; propranolol)."
+    },
+    {
+        "id": "B.1.2",
+        "description": "Antiarrítmicos (propranolol; tartarato de metoprolol)."
+    },
+    {
+        "id": "B.1.3",
+        "description": "Anti-hipertensivos"
+    },
+    {
+        "id": "B.1.3.1",
+        "description": "Bloqueadores adrenérgicos (metildopa; tartarato de metoprolol; propranolol, ATENOLOL)."
+    },
+    {
+        "id": "B.1.3.2",
+        "description": "Bloqueadores de canal de cálcio (anlodipina, VERAPAMIL)."
+    },
+    {
+        "id": "B.1.3.3",
+        "description": "Diuréticos (hidroclorotiazida)."
+    },
+    {
+        "id": "B.1.3.4",
+        "description": "Inibidores da enzima conversora da angiotensina (captopril, ENALAPRIL)."
+    },
+    {
+        "id": "B.1.4",
+        "description": "Cardiotônicos (digoxina)."
+    },
+    {
+        "id": "B.1.5",
+        "description": "Diuréticos (furosemida; hidroclorotiazida, ESPIRONOLACTONA)."
+    },
+    {
+        "id": "B.1.6",
+        "description": "Medicamentos usados no choque vascular (epinefrina)."
+    },
+    {
+        "id": "B.2",
+        "description": "DIGESTIVO"
+    },
+    {
+        "id": "B.2.1",
+        "description": "Antiácidos (hidróxido de alumínio) EXCLUÍDO"
+    },
+    {
+        "id": "B.2.2",
+        "description": "Antieméticos (metoclopramida; prometazina)."
+    },
+    {
+        "id": "B.2.3",
+        "description": "Antiespasmódicos (hioscina)."
+    },
+    {
+        "id": "B.2.4",
+        "description": "Antimicrobianos (amoxicilina)."
+    },
+    {
+        "id": "B.2.5",
+        "description": "Antisecretores (omeprazol, RANITIDINA)."
+    },
+    {
+        "id": "B.3",
+        "description": "ENDÓCRINO E REPRODUTOR"
+    },
+    {
+        "id": "B.3.1",
+        "description": "Hormônios sexuais e antagonistas (estradiol, valerato + noretisterona, enantato; estrógenos conjugados; etinilestradiol + levonorgestrel; medroxiprogesterona, acetato; noretisterona)."
+    },
+    {
+        "id": "B.3.2",
+        "description": "Hormônios Tireoideanos e adjuvantes (levotiroxina; propranolol)."
+    },
+    {
+        "id": "B.3.3",
+        "description": "Insulinas e outros agentes antidiabéticos (glibenclamida; insulina NPH; metformina)."
+    },
+    {
+        "id": "B.4",
+        "description": "HEMATOPOIÉTICO"
+    },
+    {
+        "id": "B.4.1",
+        "description": "Antianêmico (Ácido fólico; sulfato ferroso)."
+    },
+    {
+        "id": "B.4.2",
+        "description": "Antiplaquetários (Ácido acetilsalicílico)."
+    },
+    {
+        "id": "B.4.3",
+        "description": "Anticoagulantes (varfarina)."
+    },
+    {
+        "id": "B.5",
+        "description": "NERVOSO CENTRAL"
+    },
+    {
+        "id": "B.5.1",
+        "description": "Anticonvulsivantes (Ácido valpróico (valproato de sódio); carbamazepina; diazepam; fenitoína; fenobarbital, CLONAZEPAM)."
+    },
+    {
+        "id": "B.5.2",
+        "description": "Antidepressivos e antimaníacos (cloridrato de imipramina; carbonato de lítio, FLUOXETINA)."
+    },
+    {
+        "id": "B.5.3",
+        "description": "Antipsicóticos (clorpromazina, haloperidol)."
+    },
+    {
+        "id": "B.5.4",
+        "description": "Antiparkinsonianos (biperideno, LEVODOPA+BENSERAZIDA, LEVODOPA+CARBIDOPA)"
+    },
+    {
+        "id": "B.6",
+        "description": "PELE E MUCOSAS"
+    },
+    {
+        "id": "B.6.1",
+        "description": "Antiinfecciosos tópicos (metronidazol; miconazol; neomicina+bacitracina)."
+    },
+    {
+        "id": "B.6.2",
+        "description": "Antiinflamatórios tópicos e antipruriginosos (dexametasona)."
+    },
+    {
+        "id": "B.6.3",
+        "description": "Escabicidas e pediculicidas (permetrina)."
+    },
+    {
+        "id": "B.8",
+        "description": "RESPIRATÓRIO"
+    },
+    {
+        "id": "B.8.1",
+        "description": "Broncodilatadores, antiasmáticos e rinites alérgicas (beclometasona; budesonida; epinefrina/adrenalina; fenoterol; prednisona; salbutamol, PREDNISOLONA)."
+    },
+    {
+        "id": "B.8.2",
+        "description": "Preparações nasais (cloreto de sódio/benzalcônio)."
+    },
+    {
+        "id": "C.1",
+        "description": "ANESTÉSICOS"
+    },
+    {
+        "id": "C.1.1",
+        "description": "Fármacos adjuvantes de anestésicos gerais (diazepam)"
+    },
+    {
+        "id": "C.2",
+        "description": "Imunossupressores (prednisona)"
+    },
+    {
+        "id": "C.3",
+        "description": "Reguladores de homeostase mineral e metabolismo ósseo (carbonato de cálcio, ALENDRONATO DE SÓDIO)"
+    }
+]
