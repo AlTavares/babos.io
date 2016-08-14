@@ -20,14 +20,16 @@ function format() {
         element.references = new Reference()
         for (let prop in element) {
             if (prop == 'references') { continue }
+            // element[prop] = element[prop].trim()
             let refs = extractReferences(element[prop])
             element.references[prop] = refs.refs
             element[prop] = refs.text
         }
+        let re = /([A-Z])(\.\d)+/gi        
+        element.interactionGroups = element.interactions.match(re)        
     }
     let output = JSON.stringify(data, null, 4)
-    // console.log(output)
-    fs.writeFileSync('datav2.json', output)
+    fs.writeFileSync('datav3.json', output)
 }
 
 /**
@@ -37,7 +39,6 @@ function extractReferences(element) {
     let index = element.lastIndexOf('(')
     let text = element.substring(0, index)
     let refs = element.substring(index).split(';').map(trimAndAddToSet)
-    console.log(element, '\n', refs)
     return { text: text, refs: refs }
 }
 
@@ -52,7 +53,6 @@ function extractMedicines(element) {
     let text = element.substring(0, index)
     element = element.substring(index).replace(/,/gi, ';').replace(/\(|\)|\./gi, '')
     let medicines = element.split(';').map(toTitleCase)
-    print(medicines)
     return { text: text.trim(), medicines: medicines }
 }
 
@@ -87,7 +87,6 @@ function formatRemume() {
         let meds = extractMedicines(el.description)
         el.medicines = meds.medicines
         el.description = meds.text
-        // print(el)
     }
     let output = JSON.stringify(data, null, 4)
     fs.writeFileSync('remumev2.json', output)
@@ -96,9 +95,9 @@ function formatRemume() {
 
 function run() {
     console.log('Formatting...')
-    // format()
+    format()
     // saveRefs()
-    formatRemume()
+    // formatRemume()
     console.log('Finished!')
 }
 
