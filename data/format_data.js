@@ -20,13 +20,12 @@ function format() {
         element.references = new Reference()
         for (let prop in element) {
             if (prop == 'references') { continue }
-            // element[prop] = element[prop].trim()
             let refs = extractReferences(element[prop])
             element.references[prop] = refs.refs
             element[prop] = refs.text
         }
         let re = /([A-Z])(\.\d)+/gi        
-        element.interactionGroups = element.interactions.match(re)        
+        element.interactionGroups = element.interactions.match(re)
     }
     let output = JSON.stringify(data, null, 4)
     fs.writeFileSync('datav3.json', output)
@@ -37,7 +36,7 @@ function format() {
  */
 function extractReferences(element) {
     let index = element.lastIndexOf('(')
-    let text = element.substring(0, index)
+    let text = element.substring(0, index).trim()
     let refs = element.substring(index).split(';').map(trimAndAddToSet)
     return { text: text, refs: refs }
 }
