@@ -1,7 +1,7 @@
 'use strict'
 let fs = require('fs')
 let data = []
-data = require('./dados.v1.json')
+data = require('./interactions.json')
 let allRefs = new Set()
 let print = console.log
 
