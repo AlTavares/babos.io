@@ -1,67 +1,262 @@
 [
-    "ABAD & BERMEJO, 2007",
-    "AGUIAR & COSTA, 2005",
-    "ALASBAHI & MELZIG, 2010",
-    "ALBUQUERQUE et al., 2007",
-    "ALMEIDA & LEMONICA, 2000",
-    "ALONSO, 2008",
-    "APPLES, 2009",
-    "BARROS et al. 2007",
-    "BITTER ORANGE, 2009",
-    "BOLDO, 2009",
-    "BOORHEM & LAGE, 2009",
-    "BORELLA & FONTOURA, 2002",
-    "BRASIL, 2010",
-    "CARDOSO et al. 2009",
-    "CARNEY et al., 2002",
-    "CARRERA, 2010",
-    "CLARKE et al., 2007",
-    "CONSOLINI & SARUBBIO, 2002",
-    "CRUZ, 2009",
-    "CÁCERES, 2009",
-    "CÁCERES, 2009 VENDRUSCOLO et al., 2005",
-    "DEL RÍO et al., 2004",
-    "DELAPORTE et al., 2002 LAPINSKI et al, 2007",
-    "DINIZ et al., 1997",
-    "DUARTE, 2009",
-    "ERNEST, 2002",
-    "F. BRAS. IV, 1996",
-    "F. BRAS. IV, 2001",
-    "FERRO, 2008",
-    "FLEGNER, 2008",
-    "GANZERA et al., 2005",
-    "GONZÁLEZ-MOLINA et al., 2010",
-    "GREEN TEA, 2009",
-    "GUGLIUCCI & MENINI, 2002",
-    "HORSETAIL, 2009",
-    "LEMON, 2009",
-    "LEMONGRASS, 2009",
-    "LING et al., 2009",
-    "LONDRINA, 2006",
-    "MALLOW, 2009",
-    "MALUS DOMESTICA, 2009",
-    "MCINTYRE, 2009",
-    "MENDES et al., 2006",
-    "MENGUES et al., 2001",
-    "NASCIMENTO et al., 2005",
-    "NEGRELLE et al., 1999",
-    "NICOLLETI et al., 2007",
-    "NICOLLETI et al., 2010",
-    "PENNYROYAL, 2009",
-    "PLANTAIN, 2009",
-    "ROSEMARY, 2009",
-    "RUIZ et al., 2008",
-    "SAGE, 2009",
-    "SALVI & HEUSER, 2008",
-    "SENA et al., 2010",
-    "SIMÕES et al. 1998",
-    "SMÕES et al, 1985",
-    "SOARES et al., 2006",
-    "SOUZA et al., 2000",
-    "SOUZA et al., 2003",
-    "SOUZA et al., 2007",
-    "TESKE, 1999",
-    "VENDRUSCOLO et al., 2005",
-    "WAKABAYASHY et al., 2010",
-    "WHO, 2002"
+    {
+        "ref": "ABAD & BERMEJO, 2007",
+        "text": ""
+    },
+    {
+        "ref": "AGUIAR & COSTA, 2005",
+        "text": ""
+    },
+    {
+        "ref": "ALASBAHI & MELZIG, 2010",
+        "text": ""
+    },
+    {
+        "ref": "ALBUQUERQUE et al., 2007",
+        "text": ""
+    },
+    {
+        "ref": "ALMEIDA & LEMONICA, 2000",
+        "text": ""
+    },
+    {
+        "ref": "ALONSO, 2008",
+        "text": ""
+    },
+    {
+        "ref": "APPLES, 2009",
+        "text": ""
+    },
+    {
+        "ref": "BARROS et al. 2007",
+        "text": ""
+    },
+    {
+        "ref": "BITTER ORANGE, 2009",
+        "text": ""
+    },
+    {
+        "ref": "BOLDO, 2009",
+        "text": ""
+    },
+    {
+        "ref": "BOORHEM & LAGE, 2009",
+        "text": ""
+    },
+    {
+        "ref": "BORELLA & FONTOURA, 2002",
+        "text": ""
+    },
+    {
+        "ref": "BRASIL, 2010",
+        "text": ""
+    },
+    {
+        "ref": "CARDOSO et al. 2009",
+        "text": ""
+    },
+    {
+        "ref": "CARNEY et al., 2002",
+        "text": ""
+    },
+    {
+        "ref": "CARRERA, 2010",
+        "text": ""
+    },
+    {
+        "ref": "CLARKE et al., 2007",
+        "text": ""
+    },
+    {
+        "ref": "CONSOLINI & SARUBBIO, 2002",
+        "text": ""
+    },
+    {
+        "ref": "CRUZ, 2009",
+        "text": ""
+    },
+    {
+        "ref": "CÁCERES, 2009",
+        "text": ""
+    },
+    {
+        "ref": "CÁCERES, 2009 VENDRUSCOLO et al., 2005",
+        "text": ""
+    },
+    {
+        "ref": "DEL RÍO et al., 2004",
+        "text": ""
+    },
+    {
+        "ref": "DELAPORTE et al., 2002 LAPINSKI et al, 2007",
+        "text": ""
+    },
+    {
+        "ref": "DINIZ et al., 1997",
+        "text": ""
+    },
+    {
+        "ref": "DUARTE, 2009",
+        "text": ""
+    },
+    {
+        "ref": "ERNEST, 2002",
+        "text": ""
+    },
+    {
+        "ref": "F. BRAS. IV, 1996",
+        "text": ""
+    },
+    {
+        "ref": "F. BRAS. IV, 2001",
+        "text": ""
+    },
+    {
+        "ref": "FERRO, 2008",
+        "text": ""
+    },
+    {
+        "ref": "FLEGNER, 2008",
+        "text": ""
+    },
+    {
+        "ref": "GANZERA et al., 2005",
+        "text": ""
+    },
+    {
+        "ref": "GONZÁLEZ-MOLINA et al., 2010",
+        "text": ""
+    },
+    {
+        "ref": "GREEN TEA, 2009",
+        "text": ""
+    },
+    {
+        "ref": "GUGLIUCCI & MENINI, 2002",
+        "text": ""
+    },
+    {
+        "ref": "HORSETAIL, 2009",
+        "text": ""
+    },
+    {
+        "ref": "LEMON, 2009",
+        "text": ""
+    },
+    {
+        "ref": "LEMONGRASS, 2009",
+        "text": ""
+    },
+    {
+        "ref": "LING et al., 2009",
+        "text": ""
+    },
+    {
+        "ref": "LONDRINA, 2006",
+        "text": ""
+    },
+    {
+        "ref": "MALLOW, 2009",
+        "text": ""
+    },
+    {
+        "ref": "MALUS DOMESTICA, 2009",
+        "text": ""
+    },
+    {
+        "ref": "MCINTYRE, 2009",
+        "text": ""
+    },
+    {
+        "ref": "MENDES et al., 2006",
+        "text": ""
+    },
+    {
+        "ref": "MENGUES et al., 2001",
+        "text": ""
+    },
+    {
+        "ref": "NASCIMENTO et al., 2005",
+        "text": ""
+    },
+    {
+        "ref": "NEGRELLE et al., 1999",
+        "text": ""
+    },
+    {
+        "ref": "NICOLLETI et al., 2007",
+        "text": ""
+    },
+    {
+        "ref": "NICOLLETI et al., 2010",
+        "text": ""
+    },
+    {
+        "ref": "PENNYROYAL, 2009",
+        "text": ""
+    },
+    {
+        "ref": "PLANTAIN, 2009",
+        "text": ""
+    },
+    {
+        "ref": "ROSEMARY, 2009",
+        "text": ""
+    },
+    {
+        "ref": "RUIZ et al., 2008",
+        "text": ""
+    },
+    {
+        "ref": "SAGE, 2009",
+        "text": ""
+    },
+    {
+        "ref": "SALVI & HEUSER, 2008",
+        "text": ""
+    },
+    {
+        "ref": "SENA et al., 2010",
+        "text": ""
+    },
+    {
+        "ref": "SIMÕES et al. 1998",
+        "text": ""
+    },
+    {
+        "ref": "SIMÕES et al, 1985",
+        "text": ""
+    },
+    {
+        "ref": "SOARES et al., 2006",
+        "text": ""
+    },
+    {
+        "ref": "SOUZA et al., 2000",
+        "text": ""
+    },
+    {
+        "ref": "SOUZA et al., 2003",
+        "text": ""
+    },
+    {
+        "ref": "SOUZA et al., 2007",
+        "text": ""
+    },
+    {
+        "ref": "TESKE, 1999",
+        "text": ""
+    },
+    {
+        "ref": "VENDRUSCOLO et al., 2005",
+        "text": ""
+    },
+    {
+        "ref": "WAKABAYASHY et al., 2010",
+        "text": ""
+    },
+    {
+        "ref": "WHO, 2002",
+        "text": ""
+    }
 ]
