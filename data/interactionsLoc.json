@@ -528,17 +528,17 @@
             "name": [
                 "ALONSO, 2008",
                 "BOORHEM & LAGE, 2009",
-                "MENGUES et al., 2001",
+                "MENGUE et al., 2001",
                 "PENNYROYAL, 2009"
             ],
             "scientificName": [
                 "ALONSO, 2008",
                 "BOORHEM & LAGE, 2009",
-                "MENGUES et al., 2001",
+                "MENGUE et al., 2001",
                 "PENNYROYAL, 2009"
             ],
             "family": [
-                "MENGUES et al., 2001",
+                "MENGUE et al., 2001",
                 "PENNYROYAL, 2009"
             ],
             "parts": [
@@ -551,9 +551,9 @@
             ],
             "precautions": [
                 "BOORHEM & LAGE, 2009",
-                "ERNEST, 2002",
+                "ERNST, 2002",
                 "FERRO, 2008",
-                "MENGUES et al., 2001"
+                "MENGUE et al., 2001"
             ]
         },
         "interactionGroups": null
