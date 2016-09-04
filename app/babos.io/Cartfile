@@ -1,0 +1,7 @@
+github "Quick/Quick"
+github "Quick/Nimble"
+github "Alamofire/Alamofire"
+github "Hearst-DD/ObjectMapper"
+github "tristanhimmelman/AlamofireObjectMapper"
+github "Alamofire/AlamofireImage"
+github "Haneke/HanekeSwift"
