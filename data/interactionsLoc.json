@@ -1,6 +1,8 @@
 [
     {
-        "name": "Macela/Marcela",
+        "name": {
+            "pt": "Macela/Marcela"
+        },
         "scientificName": "Achyrocline satureioides (Lam.) DC.",
         "family": "Asteraceae/Compositae",
         "parts": {
@@ -50,7 +52,9 @@
         }
     },
     {
-        "name": "Camomila/Camomila vulgar/Camomila alemã/Maçanilha",
+        "name": {
+            "pt": "Camomila/Camomila vulgar/Camomila alemã/Maçanilha"
+        },
         "scientificName": "Matricaria recutita L./sin.: Chamomilla recutita Rausch., Matricaria chamomilla L.",
         "family": "Asteraceae/Compositae",
         "parts": {
@@ -118,7 +122,9 @@
         ]
     },
     {
-        "name": "Capim santo/ Capim limão/ Capim cidreira/Capim cidrão/Capim cheiroso",
+        "name": {
+            "pt": "Capim santo/ Capim limão/ Capim cidreira/Capim cidrão/Capim cheiroso"
+        },
         "scientificName": "Cymbopogon citratus (DC.) Stapf../sin.: Andropogon citratus DC., Andropogon ceriferus Hack, , Cymbopogon schoenanthus Spring., Andropogon schoenanthus L.",
         "family": "Poaceae/Gramineae",
         "parts": {
@@ -174,7 +180,9 @@
         }
     },
     {
-        "name": "Boldo do Chile/Boldo-verdadeiro",
+        "name": {
+            "pt": "Boldo do Chile/Boldo-verdadeiro"
+        },
         "scientificName": "Peumus boldus Molina\nsin.: Boldus boldus (Molina) Lyons",
         "family": "Monimiaceae",
         "parts": {
@@ -247,7 +255,9 @@
         ]
     },
     {
-        "name": "Boldo/Falso-boldo",
+        "name": {
+            "pt": "Boldo/Falso-boldo"
+        },
         "scientificName": "Plectranthus barbatus Andr./Sin.: Coleus barbatus Benth.\nPlectranthus forskohlii Briq. Plectranthus forskalaei Willd.",
         "family": "Lamiaceae/Labiatae",
         "parts": {
@@ -295,7 +305,9 @@
         "interactionGroups": null
     },
     {
-        "name": "Guaco",
+        "name": {
+            "pt": "Guaco"
+        },
         "scientificName": "Mikania glomerata Sprengl.",
         "family": "Asteraceae/Compositae",
         "parts": {
@@ -345,7 +357,9 @@
         ]
     },
     {
-        "name": "Hortelã/Hortelã-pimenta",
+        "name": {
+            "pt": "Hortelã/Hortelã-pimenta"
+        },
         "scientificName": "Mentha x piperita L./ Mentha piperita L.",
         "family": "Lamiaceae/Labiatae",
         "parts": {
@@ -405,7 +419,9 @@
         }
     },
     {
-        "name": "Malva",
+        "name": {
+            "pt": "Malva"
+        },
         "scientificName": "Malva parviflora L.\n(Não apresenta sinonímia)",
         "family": "Malvaceae",
         "parts": {
@@ -452,7 +468,9 @@
         }
     },
     {
-        "name": "Laranja/Laranjeira/Laranja azeda/Laranja ácida/Laranja Amarga",
+        "name": {
+            "pt": "Laranja/Laranjeira/Laranja azeda/Laranja ácida/Laranja Amarga"
+        },
         "scientificName": "Citrus sinensis Osbeck/sin.: Citrus aurantium L.",
         "family": "Rutaceae",
         "parts": {
@@ -506,7 +524,9 @@
         "interactionGroups": null
     },
     {
-        "name": "Poejo",
+        "name": {
+            "pt": "Poejo"
+        },
         "scientificName": "Mentha pulegium L.\nsin.: Hedeoma pulegioides (L.) Persoon",
         "family": "Lamiaceae/Labiatae",
         "parts": {
@@ -559,7 +579,9 @@
         "interactionGroups": null
     },
     {
-        "name": "Alecrim/Alecrim de Jardim/Alecrim de Cheiro/Rosmarinho",
+        "name": {
+            "pt": "Alecrim/Alecrim de Jardim/Alecrim de Cheiro/Rosmarinho"
+        },
         "scientificName": "Rosmarinus officinalis L.\nsin.: Rosmarinus latifolius Mill.",
         "family": "Lamiaceae/Labiatae",
         "parts": {
@@ -618,7 +640,9 @@
         }
     },
     {
-        "name": "Transagem/ \nTansagem/Tanchagem/",
+        "name": {
+            "pt": "Transagem/ \nTansagem/Tanchagem/"
+        },
         "scientificName": "Plantago major L.\nsin.: Plantago ovata L.\nPlantago lanceolata Forsk.\nPlantago psyllium L.",
         "family": "Plantaginaceae",
         "parts": {
@@ -669,7 +693,9 @@
         }
     },
     {
-        "name": "Quebra-pedra/Erva-pombinha/Saxifraga",
+        "name": {
+            "pt": "Quebra-pedra/Erva-pombinha/Saxifraga"
+        },
         "scientificName": "Phyllantus niruri L.\nsin.: Phyllantus lathyroides HBK.",
         "family": "Euphorbiaceae",
         "parts": {
@@ -723,7 +749,9 @@
         }
     },
     {
-        "name": "Erva cidreira/Cidreira/Cedrero",
+        "name": {
+            "pt": "Erva cidreira/Cidreira/Cedrero"
+        },
         "scientificName": "Lippia alba (Mill.) N. E. Br.\nsin.: Lippia citriadora Lantana alba Mill.\nLippia germinata HBK\nAloysia triphylla Royle",
         "family": "Verbenaceae",
         "parts": {
@@ -782,7 +810,9 @@
         }
     },
     {
-        "name": "Anis estrelado",
+        "name": {
+            "pt": "Anis estrelado"
+        },
         "scientificName": "Illicium verum Hooker\nsin.: Illicium anisatum L.",
         "family": "Illiciaceae/Magnoliaceae",
         "parts": {
@@ -835,7 +865,9 @@
         "interactionGroups": null
     },
     {
-        "name": "Cavalinha/Rabo de cavalo",
+        "name": {
+            "pt": "Cavalinha/Rabo de cavalo"
+        },
         "scientificName": "Equisetum arvensis L.,\nsin.: Equisetum arvense L Equisetum giganteum (L.) Cogn.",
         "family": "Equisetaceae",
         "parts": {
@@ -893,7 +925,9 @@
         "interactionGroups": null
     },
     {
-        "name": "Espinheira santa",
+        "name": {
+            "pt": "Espinheira santa"
+        },
         "scientificName": "Maytenus ilicifolia Mart. Ex Reiss.",
         "family": "Celastraceae",
         "parts": {
@@ -944,7 +978,9 @@
         }
     },
     {
-        "name": "Eucalipto",
+        "name": {
+            "pt": "Eucalipto"
+        },
         "scientificName": "Eucaliptus globulus Labill.",
         "family": "Myrtaceae",
         "parts": {
@@ -1006,7 +1042,9 @@
         ]
     },
     {
-        "name": "Sálvia/Sálvia Santa",
+        "name": {
+            "pt": "Sálvia/Sálvia Santa"
+        },
         "scientificName": "Salvia officinalis L.",
         "family": "Lamiaceae/ Labiatae",
         "parts": {
@@ -1069,7 +1107,9 @@
         "interactionGroups": null
     },
     {
-        "name": "Funcho",
+        "name": {
+            "pt": "Funcho"
+        },
         "scientificName": "Foeniculum vulgare Mill.",
         "family": "Apiaceae/ Umbelliferae",
         "parts": {
@@ -1143,7 +1183,9 @@
         }
     },
     {
-        "name": "Maçã",
+        "name": {
+            "pt": "Maçã"
+        },
         "scientificName": "Pyrus malus L.\nsin.: Malus domestica Borkh. Malus pumila var. domestica (Borkh.) C.K.Schneid.\nMalus pumila Mill.",
         "family": "Rosaceae",
         "parts": {
@@ -1198,7 +1240,9 @@
         ]
     },
     {
-        "name": "Chá preto\n(Obtido após fermentação e secagem) /Chá verde (Obtido por estabilizações)",
+        "name": {
+            "pt": "Chá preto\n(Obtido após fermentação e secagem) /Chá verde (Obtido por estabilizações)"
+        },
         "scientificName": "Cammellia sinensis (L.) Kuntze\nsin.: Thea sinensis L.",
         "family": "Theaceae/ Ternstromiaceae",
         "parts": {
@@ -1281,7 +1325,9 @@
         ]
     },
     {
-        "name": "Carqueja/ Carqueja-amarga",
+        "name": {
+            "pt": "Carqueja/ Carqueja-amarga"
+        },
         "scientificName": "Baccharis trimera (Less.) DC.\nsin.: Baccharis genistelloides var. trimera (Less.) Baker",
         "family": "Asteraceae/Compositae",
         "parts": {
@@ -1354,7 +1400,9 @@
         ]
     },
     {
-        "name": "Penicilina/Terramicina/Perpétua do mato/ Doril",
+        "name": {
+            "pt": "Penicilina/Terramicina/Perpétua do mato/ Doril"
+        },
         "scientificName": "Kuntze",
         "family": "Amaranthaceae",
         "parts": {
@@ -1413,7 +1461,9 @@
         }
     },
     {
-        "name": "Erva doce/ Anis",
+        "name": {
+            "pt": "Erva doce/ Anis"
+        },
         "scientificName": "Pimpinella anisum L.",
         "family": "Apiaceae/ Umbelliferae",
         "parts": {
@@ -1484,7 +1534,9 @@
         ]
     },
     {
-        "name": "Pitangueira",
+        "name": {
+            "pt": "Pitangueira"
+        },
         "scientificName": "Eugenia uniflora L.\nsin.: Eugenia pitanga L.\nEugenia michelii Lam.",
         "family": "Myrtaceae",
         "parts": {
@@ -1543,7 +1595,9 @@
         }
     },
     {
-        "name": "Limão/ Limoeiro",
+        "name": {
+            "pt": "Limão/ Limoeiro"
+        },
         "scientificName": "Citrus limon (L.) Burm. f.\nsin.: Citrus limonum (L.) Burm. Fil.",
         "family": "Rutaceae",
         "parts": {
