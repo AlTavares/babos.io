@@ -169,3 +169,6 @@ Temporary Items
 .apdisk
 
 server-config.json
+
+# private info file
+Private.swift

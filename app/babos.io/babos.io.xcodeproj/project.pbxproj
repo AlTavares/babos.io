@@ -23,6 +23,8 @@
 		DAFCA12B1D7CC33000F4881E /* PlantModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFCA12A1D7CC33000F4881E /* PlantModel.swift */; };
 		DAFCA12D1D7CCC2B00F4881E /* MultiLanguageString.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFCA12C1D7CCC2B00F4881E /* MultiLanguageString.swift */; };
 		DAFCA12F1D7CD01800F4881E /* ReferenceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFCA12E1D7CD01800F4881E /* ReferenceModel.swift */; };
+		DAFCA1311D7CD32900F4881E /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFCA1301D7CD32900F4881E /* Environment.swift */; };
+		DAFCA1331D7CD40200F4881E /* Private.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFCA1321D7CD40200F4881E /* Private.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +60,8 @@
 		DAFCA12A1D7CC33000F4881E /* PlantModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlantModel.swift; sourceTree = "<group>"; };
 		DAFCA12C1D7CCC2B00F4881E /* MultiLanguageString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MultiLanguageString.swift; sourceTree = "<group>"; };
 		DAFCA12E1D7CD01800F4881E /* ReferenceModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReferenceModel.swift; sourceTree = "<group>"; };
+		DAFCA1301D7CD32900F4881E /* Environment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
+		DAFCA1321D7CD40200F4881E /* Private.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Private.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +109,8 @@
 			isa = PBXGroup;
 			children = (
 				DAFCA1211D7CC1F000F4881E /* ResultEnum.swift */,
+				DAFCA1321D7CD40200F4881E /* Private.swift */,
+				DAFCA1301D7CD32900F4881E /* Environment.swift */,
 				DAFCA1291D7CC31900F4881E /* Models */,
 				DAFCA1281D7CC29200F4881E /* Protocols */,
 				DAFCA1251D7CC27800F4881E /* Services */,
@@ -271,8 +277,10 @@
 				DAFCA12B1D7CC33000F4881E /* PlantModel.swift in Sources */,
 				DAFCA1241D7CC27100F4881E /* InteractionsService.swift in Sources */,
 				DAFCA0F71D7CBF0300F4881E /* ViewController.swift in Sources */,
+				DAFCA1311D7CD32900F4881E /* Environment.swift in Sources */,
 				DAFCA1271D7CC28B00F4881E /* GettableProtocol.swift in Sources */,
 				DAFCA1221D7CC1F000F4881E /* ResultEnum.swift in Sources */,
+				DAFCA1331D7CD40200F4881E /* Private.swift in Sources */,
 				DAFCA0F51D7CBF0300F4881E /* AppDelegate.swift in Sources */,
 				DAFCA12F1D7CD01800F4881E /* ReferenceModel.swift in Sources */,
 			);
