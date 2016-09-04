@@ -8,7 +8,7 @@
 
 import Foundation
 
+enum Environment {
+    static let baseURL = "http://localhost:3000/parse/"
 
-struct Environment {
-    
 }
