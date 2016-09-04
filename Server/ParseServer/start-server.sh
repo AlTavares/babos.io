@@ -1,0 +1,2 @@
+mongodb-runner start
+pm2 start server-config.json --env development

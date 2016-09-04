@@ -1,3 +1,4 @@
+'use strict'
 var ParseDashboard = require('parse-dashboard');
 
 let serverURL = "http://localhost:3000/parse"
