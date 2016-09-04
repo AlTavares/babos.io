@@ -13,6 +13,9 @@ var remume = require('./remume.json')
 var Remume = Parse.Object.extend("Remume")
 saveData(remume, Remume)
 
+var references = require('./references.json')
+var Reference = Parse.Object.extend("Reference")
+saveData(references, Reference)
 
 function saveData(data, PFObject) {
     let list = []
