@@ -1,6 +1,6 @@
 'use strict'
 
-var references = require('./references.json')
+var references = require('./referencesv2.json')
 var text = require('./referenceText.json')
 
 for (var i = 0; i < references.length; i++) {
@@ -25,5 +25,6 @@ for (var i = 0; i < references.length; i++) {
 }
 
 var fs = require('fs')
+console.log(references.length)
 let output = JSON.stringify(references, null, 4)
 fs.writeFileSync('fullRef.json', output)
