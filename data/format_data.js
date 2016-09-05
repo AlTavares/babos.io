@@ -1,7 +1,7 @@
 'use strict'
 let fs = require('fs')
 let data = []
-data = require('./interactions.json')
+data = require('./interactionsmore.json')
 let allRefs = new Set()
 let print = console.log
 
@@ -28,6 +28,7 @@ function format() {
         element.interactionGroups = element.interactions.match(re)
     }
     let output = JSON.stringify(data, null, 4)
+    print(data.length)
     fs.writeFileSync('datav3.json', output)
 }
 
@@ -75,7 +76,7 @@ function trimAndAddToSet(string) {
 function saveRefs() {
     let array = [...allRefs].sort()
     let output = JSON.stringify(array, null, 4)
-    fs.writeFileSync('references.json', output)
+    fs.writeFileSync('referencesv2.json', output)
 }
 
 function formatRemume() {
@@ -95,7 +96,7 @@ function formatRemume() {
 function run() {
     console.log('Formatting...')
     format()
-    // saveRefs()
+    saveRefs()
     // formatRemume()
     console.log('Finished!')
 }
