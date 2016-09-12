@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DA2718991D80E08B00977799 /* CacheKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2718981D80E08B00977799 /* CacheKeys.swift */; };
+		DA27189B1D80E0F200977799 /* ObjectMapperHanekeExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA27189A1D80E0F200977799 /* ObjectMapperHanekeExtension.swift */; };
+		DA27189E1D80E73500977799 /* NetworkReachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA27189D1D80E73500977799 /* NetworkReachability.swift */; };
+		DAD003201D876AB600253062 /* RequestExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD0031F1D876AB600253062 /* RequestExtension.swift */; };
+		DAD003221D876D1000253062 /* CacheableProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD003211D876D1000253062 /* CacheableProtocol.swift */; };
 		DAFCA0F51D7CBF0300F4881E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFCA0F41D7CBF0300F4881E /* AppDelegate.swift */; };
 		DAFCA0F71D7CBF0300F4881E /* InteractionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFCA0F61D7CBF0300F4881E /* InteractionsViewController.swift */; };
 		DAFCA0FA1D7CBF0300F4881E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAFCA0F81D7CBF0300F4881E /* Main.storyboard */; };
@@ -38,6 +43,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DA2718981D80E08B00977799 /* CacheKeys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CacheKeys.swift; sourceTree = "<group>"; };
+		DA27189A1D80E0F200977799 /* ObjectMapperHanekeExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ObjectMapperHanekeExtension.swift; sourceTree = "<group>"; };
+		DA27189D1D80E73500977799 /* NetworkReachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkReachability.swift; sourceTree = "<group>"; };
+		DAD0031F1D876AB600253062 /* RequestExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestExtension.swift; sourceTree = "<group>"; };
+		DAD003211D876D1000253062 /* CacheableProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CacheableProtocol.swift; sourceTree = "<group>"; };
 		DAFCA0F11D7CBF0300F4881E /* babos.io.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = babos.io.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAFCA0F41D7CBF0300F4881E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DAFCA0F61D7CBF0300F4881E /* InteractionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InteractionsViewController.swift; sourceTree = "<group>"; };
@@ -86,6 +96,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DA27189C1D80E0F800977799 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				DA27189A1D80E0F200977799 /* ObjectMapperHanekeExtension.swift */,
+				DAD0031F1D876AB600253062 /* RequestExtension.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
 		DAFCA0E81D7CBF0200F4881E = {
 			isa = PBXGroup;
 			children = (
@@ -109,6 +128,8 @@
 			isa = PBXGroup;
 			children = (
 				DAFCA1211D7CC1F000F4881E /* ResultEnum.swift */,
+				DA27189D1D80E73500977799 /* NetworkReachability.swift */,
+				DA27189C1D80E0F800977799 /* Extensions */,
 				DAFCA1321D7CD40200F4881E /* Private.swift */,
 				DAFCA1301D7CD32900F4881E /* Environment.swift */,
 				DAFCA1291D7CC31900F4881E /* Models */,
@@ -120,6 +141,7 @@
 				DAFCA0FB1D7CBF0300F4881E /* Assets.xcassets */,
 				DAFCA0FD1D7CBF0300F4881E /* LaunchScreen.storyboard */,
 				DAFCA1001D7CBF0300F4881E /* Info.plist */,
+				DA2718981D80E08B00977799 /* CacheKeys.swift */,
 			);
 			path = babos.io;
 			sourceTree = "<group>";
@@ -157,6 +179,7 @@
 		DAFCA1281D7CC29200F4881E /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
+				DAD003211D876D1000253062 /* CacheableProtocol.swift */,
 				DAFCA1261D7CC28B00F4881E /* GettableProtocol.swift */,
 			);
 			name = Protocols;
@@ -300,11 +323,16 @@
 				DAFCA1241D7CC27100F4881E /* InteractionsService.swift in Sources */,
 				DAFCA0F71D7CBF0300F4881E /* InteractionsViewController.swift in Sources */,
 				DAFCA1311D7CD32900F4881E /* Environment.swift in Sources */,
+				DAD003201D876AB600253062 /* RequestExtension.swift in Sources */,
 				DAFCA1271D7CC28B00F4881E /* GettableProtocol.swift in Sources */,
 				DAFCA1221D7CC1F000F4881E /* ResultEnum.swift in Sources */,
+				DA27189E1D80E73500977799 /* NetworkReachability.swift in Sources */,
+				DA2718991D80E08B00977799 /* CacheKeys.swift in Sources */,
 				DAFCA1331D7CD40200F4881E /* Private.swift in Sources */,
 				DAFCA0F51D7CBF0300F4881E /* AppDelegate.swift in Sources */,
 				DAFCA12F1D7CD01800F4881E /* ReferenceModel.swift in Sources */,
+				DA27189B1D80E0F200977799 /* ObjectMapperHanekeExtension.swift in Sources */,
+				DAD003221D876D1000253062 /* CacheableProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -504,6 +532,7 @@
 				DAFCA1101D7CBF0300F4881E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DAFCA1111D7CBF0300F4881E /* Build configuration list for PBXNativeTarget "babos.ioTests" */ = {
 			isa = XCConfigurationList;
@@ -512,6 +541,7 @@
 				DAFCA1131D7CBF0300F4881E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -9,18 +9,16 @@
 import Foundation
 import Alamofire
 import AlamofireObjectMapper
+import Haneke
+import ObjectMapper
 
-struct InteractionsService: Gettable {
+struct InteractionsService: Gettable, Cacheable {
+    typealias Data = Plant
     let path = "classes/Interaction"
 
     func get(completionHandler: Result<[Plant]> -> Void) {
-        Alamofire.request(.GET, Environment.baseURL + path, headers: Private.authHeader)
-            .responseArray(keyPath: "results") { (response: Response<[Plant], NSError>) in
-                debugPrint(response)
-                guard let result = response.result.value else {
-                    return completionHandler(Result.failure(response.result.error!.description))
-                }
-                completionHandler(Result.success(result))
-        }
+        fetch(Environment.baseURL + path, cacheKey: CacheKeys.Interactions, completionHandler: completionHandler)
     }
+
 }
+

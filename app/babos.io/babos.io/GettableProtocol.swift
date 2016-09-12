@@ -9,6 +9,6 @@
 import Foundation
 
 protocol Gettable {
-    associatedtype Data
-    func get(completionHandler: Result<Data> -> Void)
+    associatedtype GettableData
+    func get(completionHandler: Result<GettableData> -> Void)
 }

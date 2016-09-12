@@ -16,8 +16,6 @@ struct Plant: Mappable {
     var parts: MultiLanguageString!
     var interactions: MultiLanguageString!
     var precautions: MultiLanguageString!
-    var warnings: MultiLanguageString!
-    var contraindications: MultiLanguageString!
     var interactionGroups: [String]!
     var references: Reference!
 
@@ -32,8 +30,6 @@ struct Plant: Mappable {
         parts <- map["parts"]
         interactions <- map["interactions"]
         precautions <- map["precautions"]
-        warnings <- map["warnings"]
-        contraindications <- map["contraindications"]
         interactionGroups <- map["interactionGroups"]
         references <- map["references"]
     }

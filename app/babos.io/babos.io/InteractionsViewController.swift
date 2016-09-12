@@ -15,12 +15,14 @@ class InteractionsViewController: UIViewController {
         getPlants(fromService: InteractionsService())
     }
 
-    func getPlants < Service: Gettable where Service.Data == [Plant] > (fromService service: Service) {
-        service.get() { [weak self] result in
+    func getPlants < Service: Gettable where Service.GettableData == [Plant] > (fromService service: Service) {
+        service.get() { result in
             switch result {
             case .success(let plants):
+                print("success")
                 print(plants)
             case .failure(let message):
+                print("failure")
                 print(message)
             }
         }
