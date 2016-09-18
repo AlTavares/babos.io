@@ -8,10 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		DA2718991D80E08B00977799 /* CacheKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2718981D80E08B00977799 /* CacheKeys.swift */; };
-		DA27189B1D80E0F200977799 /* ObjectMapperHanekeExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA27189A1D80E0F200977799 /* ObjectMapperHanekeExtension.swift */; };
 		DA27189E1D80E73500977799 /* NetworkReachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA27189D1D80E73500977799 /* NetworkReachability.swift */; };
 		DAD003201D876AB600253062 /* RequestExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD0031F1D876AB600253062 /* RequestExtension.swift */; };
 		DAD003221D876D1000253062 /* CacheableProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD003211D876D1000253062 /* CacheableProtocol.swift */; };
+		DAED38BC1D8F2C7900634088 /* Haneke.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAED38BB1D8F2C7900634088 /* Haneke.framework */; };
 		DAFCA0F51D7CBF0300F4881E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFCA0F41D7CBF0300F4881E /* AppDelegate.swift */; };
 		DAFCA0F71D7CBF0300F4881E /* InteractionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFCA0F61D7CBF0300F4881E /* InteractionsViewController.swift */; };
 		DAFCA0FA1D7CBF0300F4881E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAFCA0F81D7CBF0300F4881E /* Main.storyboard */; };
@@ -43,10 +43,10 @@
 
 /* Begin PBXFileReference section */
 		DA2718981D80E08B00977799 /* CacheKeys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CacheKeys.swift; sourceTree = "<group>"; };
-		DA27189A1D80E0F200977799 /* ObjectMapperHanekeExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ObjectMapperHanekeExtension.swift; sourceTree = "<group>"; };
 		DA27189D1D80E73500977799 /* NetworkReachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkReachability.swift; sourceTree = "<group>"; };
 		DAD0031F1D876AB600253062 /* RequestExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestExtension.swift; sourceTree = "<group>"; };
 		DAD003211D876D1000253062 /* CacheableProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CacheableProtocol.swift; sourceTree = "<group>"; };
+		DAED38BB1D8F2C7900634088 /* Haneke.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Haneke.framework; path = Carthage/Build/iOS/Haneke.framework; sourceTree = "<group>"; };
 		DAFCA0F11D7CBF0300F4881E /* babos.io.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = babos.io.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAFCA0F41D7CBF0300F4881E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DAFCA0F61D7CBF0300F4881E /* InteractionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InteractionsViewController.swift; sourceTree = "<group>"; };
@@ -60,9 +60,7 @@
 		DAFCA1141D7CBF8D00F4881E /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
 		DAFCA1151D7CBF8D00F4881E /* AlamofireImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AlamofireImage.framework; path = Carthage/Build/iOS/AlamofireImage.framework; sourceTree = "<group>"; };
 		DAFCA1161D7CBF8D00F4881E /* AlamofireObjectMapper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AlamofireObjectMapper.framework; path = Carthage/Build/iOS/AlamofireObjectMapper.framework; sourceTree = "<group>"; };
-		DAFCA1171D7CBF8D00F4881E /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bolts.framework; path = Carthage/Build/iOS/Bolts.framework; sourceTree = "<group>"; };
 		DAFCA1181D7CBF8D00F4881E /* ObjectMapper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ObjectMapper.framework; path = Carthage/Build/iOS/ObjectMapper.framework; sourceTree = "<group>"; };
-		DAFCA1191D7CBF8D00F4881E /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = Carthage/Build/iOS/Parse.framework; sourceTree = "<group>"; };
 		DAFCA1231D7CC27100F4881E /* InteractionsService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InteractionsService.swift; sourceTree = "<group>"; };
 		DAFCA1261D7CC28B00F4881E /* GettableProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GettableProtocol.swift; sourceTree = "<group>"; };
 		DAFCA12A1D7CC33000F4881E /* PlantModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlantModel.swift; sourceTree = "<group>"; };
@@ -81,6 +79,7 @@
 				DAFCA11B1D7CBF8D00F4881E /* AlamofireImage.framework in Frameworks */,
 				DAFCA11C1D7CBF8D00F4881E /* AlamofireObjectMapper.framework in Frameworks */,
 				DAFCA11E1D7CBF8D00F4881E /* ObjectMapper.framework in Frameworks */,
+				DAED38BC1D8F2C7900634088 /* Haneke.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -97,7 +96,6 @@
 		DA27189C1D80E0F800977799 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				DA27189A1D80E0F200977799 /* ObjectMapperHanekeExtension.swift */,
 				DAD0031F1D876AB600253062 /* RequestExtension.swift */,
 			);
 			name = Extensions;
@@ -155,12 +153,11 @@
 		DAFCA1201D7CC16900F4881E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				DAED38BB1D8F2C7900634088 /* Haneke.framework */,
 				DAFCA1141D7CBF8D00F4881E /* Alamofire.framework */,
 				DAFCA1151D7CBF8D00F4881E /* AlamofireImage.framework */,
 				DAFCA1161D7CBF8D00F4881E /* AlamofireObjectMapper.framework */,
-				DAFCA1171D7CBF8D00F4881E /* Bolts.framework */,
 				DAFCA1181D7CBF8D00F4881E /* ObjectMapper.framework */,
-				DAFCA1191D7CBF8D00F4881E /* Parse.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -330,7 +327,6 @@
 				DAFCA1331D7CD40200F4881E /* Private.swift in Sources */,
 				DAFCA0F51D7CBF0300F4881E /* AppDelegate.swift in Sources */,
 				DAFCA12F1D7CD01800F4881E /* ReferenceModel.swift in Sources */,
-				DA27189B1D80E0F200977799 /* ObjectMapperHanekeExtension.swift in Sources */,
 				DAD003221D876D1000253062 /* CacheableProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

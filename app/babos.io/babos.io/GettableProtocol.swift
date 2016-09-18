@@ -19,8 +19,7 @@ protocol Gettable {
 
 extension Gettable where Self.Data: Mappable {
     func fetch(fromURL url: String, completionHandler: @escaping (Result<[Data]>) -> Void) {
-        Alamofire.request(url, headers: Private.authHeader)
-            .responseInspector()
+        Alamofire.request(url, method: .get, headers: Private.authHeader)
             .responseArray(keyPath: "results") { (response: DataResponse<[Data]>) in
                 completionHandler(response.result)
         }
