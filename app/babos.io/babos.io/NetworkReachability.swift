@@ -20,8 +20,8 @@ struct NetworkReachability {
 
         manager.startListening()
     }
-    
-    var isOnline: Bool{
+
+    var isOnline: Bool {
         return manager.isReachable
     }
 

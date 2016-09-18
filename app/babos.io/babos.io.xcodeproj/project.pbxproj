@@ -22,7 +22,6 @@
 		DAFCA11B1D7CBF8D00F4881E /* AlamofireImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAFCA1151D7CBF8D00F4881E /* AlamofireImage.framework */; };
 		DAFCA11C1D7CBF8D00F4881E /* AlamofireObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAFCA1161D7CBF8D00F4881E /* AlamofireObjectMapper.framework */; };
 		DAFCA11E1D7CBF8D00F4881E /* ObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAFCA1181D7CBF8D00F4881E /* ObjectMapper.framework */; };
-		DAFCA1221D7CC1F000F4881E /* ResultEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFCA1211D7CC1F000F4881E /* ResultEnum.swift */; };
 		DAFCA1241D7CC27100F4881E /* InteractionsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFCA1231D7CC27100F4881E /* InteractionsService.swift */; };
 		DAFCA1271D7CC28B00F4881E /* GettableProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFCA1261D7CC28B00F4881E /* GettableProtocol.swift */; };
 		DAFCA12B1D7CC33000F4881E /* PlantModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFCA12A1D7CC33000F4881E /* PlantModel.swift */; };
@@ -64,7 +63,6 @@
 		DAFCA1171D7CBF8D00F4881E /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bolts.framework; path = Carthage/Build/iOS/Bolts.framework; sourceTree = "<group>"; };
 		DAFCA1181D7CBF8D00F4881E /* ObjectMapper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ObjectMapper.framework; path = Carthage/Build/iOS/ObjectMapper.framework; sourceTree = "<group>"; };
 		DAFCA1191D7CBF8D00F4881E /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = Carthage/Build/iOS/Parse.framework; sourceTree = "<group>"; };
-		DAFCA1211D7CC1F000F4881E /* ResultEnum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultEnum.swift; sourceTree = "<group>"; };
 		DAFCA1231D7CC27100F4881E /* InteractionsService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InteractionsService.swift; sourceTree = "<group>"; };
 		DAFCA1261D7CC28B00F4881E /* GettableProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GettableProtocol.swift; sourceTree = "<group>"; };
 		DAFCA12A1D7CC33000F4881E /* PlantModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlantModel.swift; sourceTree = "<group>"; };
@@ -127,7 +125,6 @@
 		DAFCA0F31D7CBF0300F4881E /* babos.io */ = {
 			isa = PBXGroup;
 			children = (
-				DAFCA1211D7CC1F000F4881E /* ResultEnum.swift */,
 				DA27189D1D80E73500977799 /* NetworkReachability.swift */,
 				DA27189C1D80E0F800977799 /* Extensions */,
 				DAFCA1321D7CD40200F4881E /* Private.swift */,
@@ -241,14 +238,17 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
-				LastUpgradeCheck = 0730;
+				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = "Alexandre Mantovani Tavares";
 				TargetAttributes = {
 					DAFCA0F01D7CBF0200F4881E = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = Y9GCPAGMBN;
+						LastSwiftMigration = 0800;
 					};
 					DAFCA1041D7CBF0300F4881E = {
 						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0800;
 						TestTargetID = DAFCA0F01D7CBF0200F4881E;
 					};
 				};
@@ -325,7 +325,6 @@
 				DAFCA1311D7CD32900F4881E /* Environment.swift in Sources */,
 				DAD003201D876AB600253062 /* RequestExtension.swift in Sources */,
 				DAFCA1271D7CC28B00F4881E /* GettableProtocol.swift in Sources */,
-				DAFCA1221D7CC1F000F4881E /* ResultEnum.swift in Sources */,
 				DA27189E1D80E73500977799 /* NetworkReachability.swift in Sources */,
 				DA2718991D80E08B00977799 /* CacheKeys.swift in Sources */,
 				DAFCA1331D7CD40200F4881E /* Private.swift in Sources */,
@@ -388,8 +387,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -434,8 +435,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -454,6 +457,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -463,6 +467,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = Y9GCPAGMBN;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
@@ -471,6 +476,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Tavares.babos-io";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -478,6 +484,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = Y9GCPAGMBN;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
@@ -486,6 +493,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Tavares.babos-io";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -497,6 +505,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Tavares.babos-ioTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/babos.io.app/babos.io";
 			};
 			name = Debug;
@@ -509,6 +518,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Tavares.babos-ioTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/babos.io.app/babos.io";
 			};
 			name = Release;

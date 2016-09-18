@@ -19,7 +19,7 @@ struct Plant: Mappable {
     var interactionGroups: [String]!
     var references: Reference!
 
-    init?(_ map: Map) {
+    init?(map: Map) {
 
     }
 

@@ -17,7 +17,7 @@ struct Reference: Mappable {
     var interactions: [String]!
     var precautions: [String]!
 
-    init?(_ map: Map) {
+    init?(map: Map) {
 
     }
 

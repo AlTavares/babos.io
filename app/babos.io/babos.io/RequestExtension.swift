@@ -9,7 +9,7 @@
 import Foundation
 import Alamofire
 
-extension Request {
+extension DataRequest {
     public func responseInspector() -> Self {
         return responseJSON { response in
             debugPrint(response.request) // original URL request

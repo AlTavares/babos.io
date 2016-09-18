@@ -172,3 +172,5 @@ server-config.json
 
 # private info file
 Private.swift
+
+.idea

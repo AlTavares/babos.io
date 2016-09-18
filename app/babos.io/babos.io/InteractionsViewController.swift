@@ -15,8 +15,8 @@ class InteractionsViewController: UIViewController {
         getPlants(fromService: InteractionsService())
     }
 
-    func getPlants < Service: Gettable where Service.GettableData == [Plant] > (fromService service: Service) {
-        service.get() { result in
+    func getPlants <Service: Gettable> (fromService service: Service) where Service.Data == Plant  {
+        service.get { result in
             switch result {
             case .success(let plants):
                 print("success")

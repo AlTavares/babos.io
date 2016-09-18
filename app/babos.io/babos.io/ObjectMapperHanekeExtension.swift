@@ -12,12 +12,12 @@ import Haneke
 
 extension Array where Element: Mappable {
     func toJSONObject() -> JSON {
-        return JSON.Array(self.toJSON())
+        return JSON.Array(self.toJSON() as [AnyObject])
     }
 }
 
 extension Mappable {
     func toJSONObject() -> JSON {
-        return JSON.Dictionary(self.toJSON())
+        return JSON.Dictionary(self.toJSON() as [String : AnyObject])
     }
 }

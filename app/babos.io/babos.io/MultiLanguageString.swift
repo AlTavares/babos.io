@@ -14,7 +14,7 @@ struct MultiLanguageString: Mappable, CustomStringConvertible {
     var en: String?
     var es: String?
 
-    init?(_ map: Map) {
+    init?(map: Map) {
 
     }
 

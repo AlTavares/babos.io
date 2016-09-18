@@ -13,11 +13,12 @@ import Haneke
 import ObjectMapper
 
 struct InteractionsService: Gettable, Cacheable {
+
     typealias Data = Plant
     let path = "classes/Interaction"
 
-    func get(completionHandler: Result<[Plant]> -> Void) {
-        fetch(Environment.baseURL + path, cacheKey: CacheKeys.Interactions, completionHandler: completionHandler)
+    public func get(_ completionHandler: @escaping (Result<[Plant]>) -> Void) {
+        fetch(fromUrl: Environment.baseURL + path, fromCache: CacheKeys.Interactions, completionHandler: completionHandler)
     }
 
 }
