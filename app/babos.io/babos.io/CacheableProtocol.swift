@@ -12,31 +12,37 @@ import ObjectMapper
 import Alamofire
 
 protocol Cacheable {
-    associatedtype Data: Mappable
-
+    associatedtype Data
+    
 }
 
-extension Cacheable where Self: Gettable {
-
-    func fetch(url: URLStringConvertible, cacheKey: String, completionHandler: Result<[Data]> -> Void) {
-        let cache = Shared.JSONCache
-        if !NetworkReachability.sharedInstance.isOnline {
-            cache.fetch(key: cacheKey) { result in
-                guard let object = Mapper<Data>().mapArray(result.array) else {
-                    completionHandler(Result.failure("Can't get data from cache"))
-                    return
+extension Cacheable where Self: Gettable, Self.Data: Mappable {
+    
+    func fetch(fromUrl url: String, fromCache cacheKey: String, completionHandler: @escaping (Result<[Data]>) -> Void) {
+        fetch(fromCache: cacheKey, completionHandler: completionHandler)
+        if NetworkReachability.sharedInstance.isOnline {
+            fetch(fromURL: url) { result in
+                completionHandler(result)
+                if let data = result.value {
+                    let cache = Shared.JSONCache
+                    cache.set(value: data.toJSONObject(), key: CacheKeys.Interactions)
                 }
-                completionHandler(Result.success(object))
-
             }
         }
-        Alamofire.request(.GET, url, headers: Private.authHeader)
-            .responseArray(keyPath: "results") { (response: Response<[Data], NSError>) in
-                guard let result = response.result.value else {
-                    return completionHandler(Result.failure(response.result.error!.description))
-                }
-                cache.set(value: result.toJSONObject(), key: cacheKey)
-                completionHandler(Result.success(result))
+    }
+    
+    func fetch(fromCache cacheKey: String, completionHandler: @escaping (Result<[Data]>) -> Void) {
+        let cache = Shared.JSONCache
+        _ = cache.fetch(key: cacheKey).onSuccess { result in
+            guard let object = Mapper<Data>().map(JSON: result.dictionary) else {
+                completionHandler(Result.failure("Can't get data from cache"))
+                return
+            }
+            let a = Result.success(object)
+            print(a)
+//            completionHandler(Result.success(object))
         }
     }
 }
+
+extension String: Error {}

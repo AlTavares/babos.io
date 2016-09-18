@@ -7,8 +7,22 @@
 //
 
 import Foundation
+import Alamofire
+import AlamofireObjectMapper
+import ObjectMapper
+import Haneke
 
 protocol Gettable {
-    associatedtype GettableData
-    func get(completionHandler: Result<GettableData> -> Void)
+    associatedtype Data
+    func get(_ completionHandler: @escaping (Result<[Data]>) -> Void)
+}
+
+extension Gettable where Self.Data: Mappable {
+    func fetch(fromURL url: String, completionHandler: @escaping (Result<[Data]>) -> Void) {
+        Alamofire.request(url, headers: Private.authHeader)
+            .responseInspector()
+            .responseArray(keyPath: "results") { (response: DataResponse<[Data]>) in
+                completionHandler(response.result)
+        }
+    }
 }
