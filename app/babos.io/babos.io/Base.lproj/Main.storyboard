@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Sqc-Eq-bPq">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Sqc-Eq-bPq">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--Interactions View Controller-->
@@ -15,56 +15,64 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="123" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="hab-Au-FmE">
-                                <rect key="frame" x="0.0" y="64" width="600" height="536"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <inset key="scrollIndicatorInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="4"/>
+                                <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="123" id="2X6-J5-hb6">
-                                        <rect key="frame" x="0.0" y="28" width="600" height="123"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleAspectFit" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="PlantTableViewCell" rowHeight="123" id="2X6-J5-hb6" customClass="PlantTableViewCell" customModule="babos_io" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="320" height="123"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="2X6-J5-hb6" id="tmb-Yu-g1Q">
-                                            <rect key="frame" x="0.0" y="0.0" width="600" height="122.5"/>
+                                            <frame key="frameInset" width="320" height="122"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0XI-x6-8Ok">
-                                                    <rect key="frame" x="8" y="8" width="584" height="106.5"/>
+                                                <stackView opaque="NO" contentMode="scaleAspectFit" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="O22-gP-hxb">
                                                     <subviews>
-                                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="vHg-TW-Njs">
-                                                            <rect key="frame" x="0.0" y="0.0" width="584" height="107"/>
-                                                            <subviews>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cok-Hz-xco">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="584" height="107"/>
-                                                                    <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
-                                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                                                    <nil key="highlightedColor"/>
-                                                                </label>
-                                                            </subviews>
-                                                        </stackView>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="babosa" translatesAutoresizingMaskIntoConstraints="NO" id="42p-BL-Wsf"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IkE-N4-7S5">
+                                                            <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="18"/>
+                                                            <color key="textColor" red="0.16862745100000001" green="0.4549019608" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Aa7-cd-xhx">
+                                                            <fontDescription key="fontDescription" name="Avenir-BookOblique" family="Avenir" pointSize="14"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
                                                     </subviews>
-                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="bottom" secondItem="vHg-TW-Njs" secondAttribute="bottom" id="4hS-AL-mUn"/>
-                                                        <constraint firstItem="vHg-TW-Njs" firstAttribute="top" secondItem="0XI-x6-8Ok" secondAttribute="top" id="Ky8-B4-YCq"/>
-                                                        <constraint firstAttribute="trailing" secondItem="vHg-TW-Njs" secondAttribute="trailing" id="Uh1-om-4a3"/>
-                                                        <constraint firstItem="vHg-TW-Njs" firstAttribute="leading" secondItem="0XI-x6-8Ok" secondAttribute="leading" id="oFc-Kg-HiJ"/>
+                                                        <constraint firstItem="IkE-N4-7S5" firstAttribute="top" secondItem="42p-BL-Wsf" secondAttribute="bottom" id="3bT-13-vUC"/>
+                                                        <constraint firstItem="42p-BL-Wsf" firstAttribute="top" secondItem="O22-gP-hxb" secondAttribute="top" id="7fz-39-S34"/>
+                                                        <constraint firstAttribute="trailing" secondItem="42p-BL-Wsf" secondAttribute="trailing" id="BCg-oN-ayY"/>
+                                                        <constraint firstItem="42p-BL-Wsf" firstAttribute="top" secondItem="O22-gP-hxb" secondAttribute="top" id="BZx-JX-IRV"/>
+                                                        <constraint firstItem="IkE-N4-7S5" firstAttribute="top" secondItem="42p-BL-Wsf" secondAttribute="bottom" id="H08-WB-J4j"/>
+                                                        <constraint firstItem="42p-BL-Wsf" firstAttribute="leading" secondItem="O22-gP-hxb" secondAttribute="leading" id="b5i-G7-eEm"/>
+                                                        <constraint firstItem="42p-BL-Wsf" firstAttribute="leading" secondItem="O22-gP-hxb" secondAttribute="leading" id="mpd-Ex-v7g"/>
+                                                        <constraint firstAttribute="trailing" secondItem="42p-BL-Wsf" secondAttribute="trailing" id="u5Q-LV-kwX"/>
                                                     </constraints>
-                                                </view>
+                                                </stackView>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstAttribute="trailingMargin" secondItem="0XI-x6-8Ok" secondAttribute="trailing" id="4LF-lz-SWl"/>
-                                                <constraint firstItem="0XI-x6-8Ok" firstAttribute="leading" secondItem="tmb-Yu-g1Q" secondAttribute="leadingMargin" id="SWp-kS-b1e"/>
-                                                <constraint firstItem="0XI-x6-8Ok" firstAttribute="top" secondItem="tmb-Yu-g1Q" secondAttribute="topMargin" id="bg8-57-0lC"/>
-                                                <constraint firstAttribute="bottomMargin" secondItem="0XI-x6-8Ok" secondAttribute="bottom" id="ggK-lq-l6k"/>
+                                                <constraint firstItem="O22-gP-hxb" firstAttribute="leading" secondItem="tmb-Yu-g1Q" secondAttribute="leading" constant="6" id="OKY-iZ-GN4"/>
+                                                <constraint firstItem="O22-gP-hxb" firstAttribute="top" secondItem="tmb-Yu-g1Q" secondAttribute="top" id="Pmd-j0-ww3"/>
+                                                <constraint firstAttribute="bottom" secondItem="O22-gP-hxb" secondAttribute="bottom" constant="12" id="mFp-Rf-dGe"/>
+                                                <constraint firstAttribute="trailing" secondItem="O22-gP-hxb" secondAttribute="trailing" constant="6" id="vey-pu-jPu"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="name" destination="IkE-N4-7S5" id="mBd-eA-ki4"/>
+                                            <outlet property="scientificName" destination="Aa7-cd-xhx" id="dBJ-fq-9au"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.90319725069139078" green="0.9037032877004515" blue="0.93470128675568198" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="hab-Au-FmE" secondAttribute="bottom" id="NAd-gP-RXu"/>
                             <constraint firstItem="hab-Au-FmE" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="W1M-cw-Mkw"/>
@@ -73,10 +81,13 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="8jx-dZ-21p"/>
+                    <connections>
+                        <outlet property="tableView" destination="hab-Au-FmE" id="8LX-p5-kKg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1001" y="-406"/>
+            <point key="canvasLocation" x="1111.875" y="-406.6901408450704"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="x97-xd-5Yy">
@@ -86,9 +97,9 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="vss-9J-QTJ">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" red="0.50980392156862742" green="0.69803921568627447" blue="0.11764705882352941" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="barTintColor" red="0.50980392156862742" green="0.69803921568627447" blue="0.11764705882352941" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <textAttributes key="titleTextAttributes">
-                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -101,4 +112,7 @@
             <point key="canvasLocation" x="307" y="-406"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="babosa" width="200" height="132"/>
+    </resources>
 </document>

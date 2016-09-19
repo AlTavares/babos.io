@@ -10,6 +10,7 @@ import Foundation
 import ObjectMapper
 
 struct MultiLanguageString: Mappable, CustomStringConvertible {
+
     var pt: String?
     var en: String?
     var es: String?
@@ -24,7 +25,7 @@ struct MultiLanguageString: Mappable, CustomStringConvertible {
         es <- map["es"]
     }
     
-    var description: String {
+    public var description: String {
         return pt!
     }
 }
