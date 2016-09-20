@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		DA2718991D80E08B00977799 /* CacheKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2718981D80E08B00977799 /* CacheKeys.swift */; };
 		DA27189E1D80E73500977799 /* NetworkReachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA27189D1D80E73500977799 /* NetworkReachability.swift */; };
+		DA3E136C1D91DFBD00DD4181 /* NibDesignable.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA3E136B1D91DFBD00DD4181 /* NibDesignable.framework */; };
+		DA3E136E1D91FDD100DD4181 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3E136D1D91FDD100DD4181 /* CardView.swift */; };
+		DA3E13701D91FE6600DD4181 /* CardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA3E136F1D91FE6600DD4181 /* CardView.xib */; };
 		DAD003201D876AB600253062 /* RequestExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD0031F1D876AB600253062 /* RequestExtension.swift */; };
 		DAD003221D876D1000253062 /* CacheableProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD003211D876D1000253062 /* CacheableProtocol.swift */; };
 		DAED38BC1D8F2C7900634088 /* Haneke.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAED38BB1D8F2C7900634088 /* Haneke.framework */; };
@@ -46,6 +49,9 @@
 /* Begin PBXFileReference section */
 		DA2718981D80E08B00977799 /* CacheKeys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CacheKeys.swift; sourceTree = "<group>"; };
 		DA27189D1D80E73500977799 /* NetworkReachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkReachability.swift; sourceTree = "<group>"; };
+		DA3E136B1D91DFBD00DD4181 /* NibDesignable.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NibDesignable.framework; path = Carthage/Build/iOS/NibDesignable.framework; sourceTree = "<group>"; };
+		DA3E136D1D91FDD100DD4181 /* CardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		DA3E136F1D91FE6600DD4181 /* CardView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CardView.xib; sourceTree = "<group>"; };
 		DAD0031F1D876AB600253062 /* RequestExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestExtension.swift; sourceTree = "<group>"; };
 		DAD003211D876D1000253062 /* CacheableProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CacheableProtocol.swift; sourceTree = "<group>"; };
 		DAED38BB1D8F2C7900634088 /* Haneke.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Haneke.framework; path = Carthage/Build/iOS/Haneke.framework; sourceTree = "<group>"; };
@@ -84,6 +90,7 @@
 				DAFCA11C1D7CBF8D00F4881E /* AlamofireObjectMapper.framework in Frameworks */,
 				DAFCA11E1D7CBF8D00F4881E /* ObjectMapper.framework in Frameworks */,
 				DAED38BC1D8F2C7900634088 /* Haneke.framework in Frameworks */,
+				DA3E136C1D91DFBD00DD4181 /* NibDesignable.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -118,6 +125,8 @@
 			isa = PBXGroup;
 			children = (
 				DAED38BE1D8F320500634088 /* PlantTableViewCell.swift */,
+				DA3E136D1D91FDD100DD4181 /* CardView.swift */,
+				DA3E136F1D91FE6600DD4181 /* CardView.xib */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -175,6 +184,7 @@
 		DAFCA1201D7CC16900F4881E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				DA3E136B1D91DFBD00DD4181 /* NibDesignable.framework */,
 				DAED38BB1D8F2C7900634088 /* Haneke.framework */,
 				DAFCA1141D7CBF8D00F4881E /* Alamofire.framework */,
 				DAFCA1151D7CBF8D00F4881E /* AlamofireImage.framework */,
@@ -298,6 +308,7 @@
 			files = (
 				DAFCA0FF1D7CBF0300F4881E /* LaunchScreen.storyboard in Resources */,
 				DAFCA0FC1D7CBF0300F4881E /* Assets.xcassets in Resources */,
+				DA3E13701D91FE6600DD4181 /* CardView.xib in Resources */,
 				DAFCA0FA1D7CBF0300F4881E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -323,6 +334,7 @@
 				"$(SRCROOT)/Carthage/Build/iOS/AlamofireObjectMapper.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/Haneke.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/ObjectMapper.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/NibDesignable.framework",
 			);
 			outputPaths = (
 			);
@@ -351,6 +363,7 @@
 				DAFCA1331D7CD40200F4881E /* Private.swift in Sources */,
 				DAFCA0F51D7CBF0300F4881E /* AppDelegate.swift in Sources */,
 				DAFCA12F1D7CD01800F4881E /* ReferenceModel.swift in Sources */,
+				DA3E136E1D91FDD100DD4181 /* CardView.swift in Sources */,
 				DAD003221D876D1000253062 /* CacheableProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
