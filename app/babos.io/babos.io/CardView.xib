@@ -9,17 +9,17 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CardView" customModule="babos_io" customModuleProvider="target">
             <connections>
                 <outlet property="contentView" destination="4yO-N5-c7v" id="o2v-uF-E96"/>
-                <outlet property="lblContent" destination="Xzx-5N-pD6" id="YIY-la-6rB"/>
                 <outlet property="lblTitle" destination="AfT-gS-bqb" id="6pf-J7-RlO"/>
                 <outlet property="titleView" destination="0dQ-Qb-ilP" id="tKB-OM-xTf"/>
+                <outlet property="txtContent" destination="JBg-iY-9Py" id="XTq-g4-RQp"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <view contentMode="scaleToFill" id="iN0-l3-epB">
+        <view clipsSubviews="YES" contentMode="scaleToFill" id="iN0-l3-epB">
             <rect key="frame" x="0.0" y="0.0" width="375" height="167"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0dQ-Qb-ilP">
+                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0dQ-Qb-ilP">
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AfT-gS-bqb">
                             <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="18"/>
@@ -36,20 +36,27 @@
                         <constraint firstAttribute="height" constant="44" id="u1S-j2-0hp"/>
                     </constraints>
                 </view>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4yO-N5-c7v">
+                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4yO-N5-c7v">
                     <subviews>
-                        <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xzx-5N-pD6">
-                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                            <nil key="textColor"/>
-                            <nil key="highlightedColor"/>
-                        </label>
+                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JBg-iY-9Py">
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <attributedString key="attributedText">
+                                <fragment content="text">
+                                    <attributes>
+                                        <font key="NSFont" size="17" name="Avenir-Book"/>
+                                    </attributes>
+                                </fragment>
+                            </attributedString>
+                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                        </textView>
                     </subviews>
-                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
-                        <constraint firstAttribute="bottom" secondItem="Xzx-5N-pD6" secondAttribute="bottom" id="cq6-G9-lVu"/>
-                        <constraint firstItem="Xzx-5N-pD6" firstAttribute="leading" secondItem="4yO-N5-c7v" secondAttribute="leading" constant="4" id="di0-hs-Wpx"/>
-                        <constraint firstItem="Xzx-5N-pD6" firstAttribute="top" secondItem="4yO-N5-c7v" secondAttribute="top" id="oRr-Y9-bGJ"/>
-                        <constraint firstAttribute="trailing" secondItem="Xzx-5N-pD6" secondAttribute="trailing" constant="4" id="x5Z-FD-5zn"/>
+                        <constraint firstAttribute="bottom" secondItem="JBg-iY-9Py" secondAttribute="bottom" constant="4" id="6M7-zb-Xen"/>
+                        <constraint firstAttribute="trailing" secondItem="JBg-iY-9Py" secondAttribute="trailing" constant="4" id="ATB-qK-tPz"/>
+                        <constraint firstItem="JBg-iY-9Py" firstAttribute="leading" secondItem="4yO-N5-c7v" secondAttribute="leading" constant="4" id="Qct-c2-Ywf"/>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="60" id="QjE-H9-PvK"/>
+                        <constraint firstItem="JBg-iY-9Py" firstAttribute="top" secondItem="4yO-N5-c7v" secondAttribute="top" id="T4p-Em-SsE"/>
                     </constraints>
                 </view>
             </subviews>

@@ -17,10 +17,11 @@ class CardView: NibDesignable {
             lblTitle.text = title
         }
     }
-    @IBOutlet weak var lblContent: UILabel!
+    @IBOutlet weak var txtContent: UITextView!
     @IBInspectable var content: String! {
         didSet{
-            lblContent.text = content
+            txtContent.text = content
+            
         }
     }
     @IBOutlet weak var contentView: UIView!
@@ -36,7 +37,20 @@ class CardView: NibDesignable {
         }
     }
     
-    override func prepareForInterfaceBuilder() {
+    @IBInspectable var cornerRadius: CGFloat = 4
+    
+    override func layoutSubviews() {
+        backgroundColor = UIColor.clear
+        layer.cornerRadius = 10
+        layer.masksToBounds = true
+        clipsToBounds = true
+//        let maskPath = UIBezierPath(roundedRect: bounds,byRoundingCorners: .allCorners, cornerRadii: CGSize(width: cornerRadius, height: cornerRadius))
+//        let maskLayer = CAShapeLayer(layer: maskPath)
+//        maskLayer.frame = bounds
+//        maskLayer.path = maskPath.cgPath
+//        layer.mask = maskLayer
+        layer.borderWidth = 0.5
+        layer.borderColor = UIColor.black.withAlphaComponent(0.15).cgColor
         
     }
     

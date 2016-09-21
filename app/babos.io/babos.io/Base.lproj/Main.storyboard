@@ -135,45 +135,52 @@
                                                             <constraint firstAttribute="height" relation="lessThanOrEqual" constant="200" id="nYZ-9A-ett"/>
                                                         </constraints>
                                                     </imageView>
-                                                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5oE-j8-8n1" customClass="CardView" customModule="babos_io" customModuleProvider="target">
-                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5oE-j8-8n1" customClass="CardView" customModule="babos_io" customModuleProvider="target">
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                         <userDefinedRuntimeAttributes>
                                                             <userDefinedRuntimeAttribute type="string" keyPath="title" value="Nome"/>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="content" value=" "/>
                                                         </userDefinedRuntimeAttributes>
                                                     </view>
-                                                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iJ0-AG-l9V" customClass="CardView" customModule="babos_io" customModuleProvider="target">
-                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iJ0-AG-l9V" customClass="CardView" customModule="babos_io" customModuleProvider="target">
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                         <userDefinedRuntimeAttributes>
                                                             <userDefinedRuntimeAttribute type="string" keyPath="title" value="Nome Cientifico"/>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="content" value=" "/>
                                                         </userDefinedRuntimeAttributes>
                                                     </view>
-                                                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xn6-AZ-utA" customClass="CardView" customModule="babos_io" customModuleProvider="target">
-                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xn6-AZ-utA" customClass="CardView" customModule="babos_io" customModuleProvider="target">
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                         <userDefinedRuntimeAttributes>
                                                             <userDefinedRuntimeAttribute type="string" keyPath="title" value="Família"/>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="content" value=" "/>
                                                         </userDefinedRuntimeAttributes>
                                                     </view>
-                                                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OOL-wD-32o" customClass="CardView" customModule="babos_io" customModuleProvider="target">
-                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OOL-wD-32o" customClass="CardView" customModule="babos_io" customModuleProvider="target">
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                         <userDefinedRuntimeAttributes>
                                                             <userDefinedRuntimeAttribute type="string" keyPath="title" value="Partes Usadas"/>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="content" value=" "/>
                                                         </userDefinedRuntimeAttributes>
                                                     </view>
-                                                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nKd-Ml-m04" customClass="CardView" customModule="babos_io" customModuleProvider="target">
-                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                        <userDefinedRuntimeAttributes>
-                                                            <userDefinedRuntimeAttribute type="string" keyPath="title" value="Interações"/>
-                                                        </userDefinedRuntimeAttributes>
-                                                    </view>
-                                                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2Zw-bl-v7j" customClass="CardView" customModule="babos_io" customModuleProvider="target">
-                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2Zw-bl-v7j" customClass="CardView" customModule="babos_io" customModuleProvider="target">
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                         <userDefinedRuntimeAttributes>
                                                             <userDefinedRuntimeAttribute type="string" keyPath="title" value="Precauções"/>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="content" value=" "/>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nKd-Ml-m04" customClass="CardView" customModule="babos_io" customModuleProvider="target">
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="title" value="Interações"/>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="content" value=" "/>
                                                         </userDefinedRuntimeAttributes>
                                                     </view>
                                                 </subviews>
                                                 <color key="backgroundColor" red="0.94707559610000003" green="0.94760621700000003" blue="0.98011013390000001" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
+                                                    <constraint firstAttribute="bottom" secondItem="nKd-Ml-m04" secondAttribute="bottom" constant="40" id="2Xn-lj-KwG"/>
                                                     <constraint firstAttribute="trailing" secondItem="nKd-Ml-m04" secondAttribute="trailing" constant="8" id="74T-bL-XiY"/>
                                                     <constraint firstAttribute="trailing" secondItem="2Zw-bl-v7j" secondAttribute="trailing" constant="8" id="94Y-k7-mFS"/>
                                                     <constraint firstItem="2Zw-bl-v7j" firstAttribute="leading" secondItem="xAk-ne-YYL" secondAttribute="leading" constant="8" id="AQX-vB-6gE"/>
@@ -200,15 +207,14 @@
                                         </subviews>
                                         <constraints>
                                             <constraint firstAttribute="trailing" secondItem="xAk-ne-YYL" secondAttribute="trailing" id="8kW-wx-rjo"/>
-                                            <constraint firstAttribute="bottom" secondItem="xAk-ne-YYL" secondAttribute="bottom" id="OJy-BO-ezT"/>
+                                            <constraint firstItem="xAk-ne-YYL" firstAttribute="top" secondItem="ez9-Wo-xlw" secondAttribute="top" id="BqP-2d-Exi"/>
+                                            <constraint firstAttribute="bottom" secondItem="xAk-ne-YYL" secondAttribute="bottom" id="hXo-Lf-HB4"/>
                                             <constraint firstItem="xAk-ne-YYL" firstAttribute="leading" secondItem="ez9-Wo-xlw" secondAttribute="leading" id="kCs-3x-bx5"/>
-                                            <constraint firstItem="xAk-ne-YYL" firstAttribute="top" secondItem="ez9-Wo-xlw" secondAttribute="top" id="or3-hw-SZd"/>
                                         </constraints>
                                     </scrollView>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstItem="xAk-ne-YYL" firstAttribute="height" secondItem="n3e-7Y-mEk" secondAttribute="height" id="JOO-jZ-Bcy"/>
                                     <constraint firstAttribute="bottom" secondItem="ez9-Wo-xlw" secondAttribute="bottom" id="Ptl-fL-vAJ"/>
                                     <constraint firstItem="ez9-Wo-xlw" firstAttribute="top" secondItem="n3e-7Y-mEk" secondAttribute="top" id="XHz-SI-sM7"/>
                                     <constraint firstAttribute="trailing" secondItem="ez9-Wo-xlw" secondAttribute="trailing" id="gHa-AX-6qV"/>
