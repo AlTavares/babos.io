@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="CrT-Ai-hKw">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
@@ -15,7 +15,7 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="164" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="hab-Au-FmE">
@@ -24,10 +24,10 @@
                                 <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleAspectFit" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="PlantTableViewCell" rowHeight="164" id="2X6-J5-hb6" customClass="PlantTableViewCell" customModule="babos_io" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="320" height="164"/>
+                                        <rect key="frame" x="0.0" y="28" width="375" height="164"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" multipleTouchEnabled="YES" contentMode="center" tableViewCell="2X6-J5-hb6" id="tmb-Yu-g1Q">
-                                            <frame key="frameInset" width="320" height="164"/>
+                                            <frame key="frameInset" width="375" height="164"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gl4-9w-hUj">
@@ -112,16 +112,16 @@
             </objects>
             <point key="canvasLocation" x="1111.875" y="-406.6901408450704"/>
         </scene>
-        <!--View Controller-->
+        <!--Interaction Detail View Controller-->
         <scene sceneID="bb4-HA-14Y">
             <objects>
-                <viewController automaticallyAdjustsScrollViewInsets="NO" id="CrT-Ai-hKw" sceneMemberID="viewController">
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="CrT-Ai-hKw" customClass="InteractionDetailViewController" customModule="babos_io" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="9hS-NK-eK3"/>
                         <viewControllerLayoutGuide type="bottom" id="hH6-ED-0r9"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="D4c-1L-CXS">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="900"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="n3e-7Y-mEk" userLabel="MainView">
@@ -137,38 +137,78 @@
                                                     </imageView>
                                                     <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5oE-j8-8n1" customClass="CardView" customModule="babos_io" customModuleProvider="target">
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                        <constraints>
-                                                            <constraint firstAttribute="height" constant="133" id="D8J-Zd-i6f"/>
-                                                        </constraints>
                                                         <userDefinedRuntimeAttributes>
-                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                                <real key="value" value="10"/>
-                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="title" value="Nome"/>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </view>
+                                                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iJ0-AG-l9V" customClass="CardView" customModule="babos_io" customModuleProvider="target">
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="title" value="Nome Cientifico"/>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </view>
+                                                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xn6-AZ-utA" customClass="CardView" customModule="babos_io" customModuleProvider="target">
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="title" value="Família"/>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </view>
+                                                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OOL-wD-32o" customClass="CardView" customModule="babos_io" customModuleProvider="target">
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="title" value="Partes Usadas"/>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </view>
+                                                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nKd-Ml-m04" customClass="CardView" customModule="babos_io" customModuleProvider="target">
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="title" value="Interações"/>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </view>
+                                                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2Zw-bl-v7j" customClass="CardView" customModule="babos_io" customModuleProvider="target">
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="title" value="Precauções"/>
                                                         </userDefinedRuntimeAttributes>
                                                     </view>
                                                 </subviews>
                                                 <color key="backgroundColor" red="0.94707559610000003" green="0.94760621700000003" blue="0.98011013390000001" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
+                                                    <constraint firstAttribute="trailing" secondItem="nKd-Ml-m04" secondAttribute="trailing" constant="8" id="74T-bL-XiY"/>
+                                                    <constraint firstAttribute="trailing" secondItem="2Zw-bl-v7j" secondAttribute="trailing" constant="8" id="94Y-k7-mFS"/>
+                                                    <constraint firstItem="2Zw-bl-v7j" firstAttribute="leading" secondItem="xAk-ne-YYL" secondAttribute="leading" constant="8" id="AQX-vB-6gE"/>
+                                                    <constraint firstItem="5oE-j8-8n1" firstAttribute="leading" secondItem="xAk-ne-YYL" secondAttribute="leading" constant="8" id="CNw-X3-6EE"/>
+                                                    <constraint firstItem="OOL-wD-32o" firstAttribute="top" secondItem="Xn6-AZ-utA" secondAttribute="bottom" constant="20" id="EKc-CD-K6Z"/>
+                                                    <constraint firstItem="2Zw-bl-v7j" firstAttribute="top" secondItem="OOL-wD-32o" secondAttribute="bottom" constant="20" id="GIr-FN-Jog"/>
                                                     <constraint firstAttribute="trailing" secondItem="da6-dV-13P" secondAttribute="trailing" id="Hhe-FN-Tmu"/>
-                                                    <constraint firstItem="5oE-j8-8n1" firstAttribute="top" secondItem="da6-dV-13P" secondAttribute="bottom" constant="10" id="K7I-Oq-YM5"/>
-                                                    <constraint firstAttribute="height" constant="504" id="YhU-NM-KlC"/>
-                                                    <constraint firstAttribute="trailing" secondItem="5oE-j8-8n1" secondAttribute="trailing" constant="8" id="b4R-8h-YMK"/>
-                                                    <constraint firstItem="5oE-j8-8n1" firstAttribute="leading" secondItem="xAk-ne-YYL" secondAttribute="leading" constant="8" id="l3P-Vf-crM"/>
+                                                    <constraint firstItem="Xn6-AZ-utA" firstAttribute="top" secondItem="iJ0-AG-l9V" secondAttribute="bottom" constant="20" id="JTe-9b-M4T"/>
+                                                    <constraint firstItem="iJ0-AG-l9V" firstAttribute="top" secondItem="5oE-j8-8n1" secondAttribute="bottom" constant="20" id="LTc-YI-OxC"/>
+                                                    <constraint firstItem="nKd-Ml-m04" firstAttribute="top" secondItem="2Zw-bl-v7j" secondAttribute="bottom" constant="20" id="Leu-LK-iZY"/>
+                                                    <constraint firstItem="Xn6-AZ-utA" firstAttribute="leading" secondItem="xAk-ne-YYL" secondAttribute="leading" constant="8" id="NxO-3D-OdJ"/>
+                                                    <constraint firstItem="iJ0-AG-l9V" firstAttribute="leading" secondItem="xAk-ne-YYL" secondAttribute="leading" constant="8" id="Oin-so-MdC"/>
+                                                    <constraint firstItem="5oE-j8-8n1" firstAttribute="top" secondItem="da6-dV-13P" secondAttribute="bottom" constant="20" id="Vqk-aL-8wQ"/>
+                                                    <constraint firstAttribute="trailing" secondItem="OOL-wD-32o" secondAttribute="trailing" constant="8" id="bcE-li-wcu"/>
+                                                    <constraint firstAttribute="trailing" secondItem="5oE-j8-8n1" secondAttribute="trailing" constant="8" id="fOJ-yc-K2b"/>
+                                                    <constraint firstAttribute="trailing" secondItem="iJ0-AG-l9V" secondAttribute="trailing" constant="8" id="h8x-TV-McS"/>
+                                                    <constraint firstItem="nKd-Ml-m04" firstAttribute="leading" secondItem="xAk-ne-YYL" secondAttribute="leading" constant="8" id="jnZ-Ta-vQv"/>
+                                                    <constraint firstAttribute="trailing" secondItem="Xn6-AZ-utA" secondAttribute="trailing" constant="8" id="pxf-fV-oPr"/>
                                                     <constraint firstItem="da6-dV-13P" firstAttribute="top" secondItem="xAk-ne-YYL" secondAttribute="top" id="uaZ-dr-6zq"/>
+                                                    <constraint firstItem="OOL-wD-32o" firstAttribute="leading" secondItem="xAk-ne-YYL" secondAttribute="leading" constant="8" id="urZ-xR-5F2"/>
                                                     <constraint firstItem="da6-dV-13P" firstAttribute="leading" secondItem="xAk-ne-YYL" secondAttribute="leading" id="yfz-3Q-UNM"/>
                                                 </constraints>
                                             </view>
                                         </subviews>
                                         <constraints>
                                             <constraint firstAttribute="trailing" secondItem="xAk-ne-YYL" secondAttribute="trailing" id="8kW-wx-rjo"/>
-                                            <constraint firstItem="xAk-ne-YYL" firstAttribute="top" secondItem="ez9-Wo-xlw" secondAttribute="top" id="HVa-2Y-eP7"/>
-                                            <constraint firstAttribute="bottom" secondItem="xAk-ne-YYL" secondAttribute="bottom" id="LiJ-PB-SHA"/>
+                                            <constraint firstAttribute="bottom" secondItem="xAk-ne-YYL" secondAttribute="bottom" id="OJy-BO-ezT"/>
                                             <constraint firstItem="xAk-ne-YYL" firstAttribute="leading" secondItem="ez9-Wo-xlw" secondAttribute="leading" id="kCs-3x-bx5"/>
+                                            <constraint firstItem="xAk-ne-YYL" firstAttribute="top" secondItem="ez9-Wo-xlw" secondAttribute="top" id="or3-hw-SZd"/>
                                         </constraints>
                                     </scrollView>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
+                                    <constraint firstItem="xAk-ne-YYL" firstAttribute="height" secondItem="n3e-7Y-mEk" secondAttribute="height" id="JOO-jZ-Bcy"/>
                                     <constraint firstAttribute="bottom" secondItem="ez9-Wo-xlw" secondAttribute="bottom" id="Ptl-fL-vAJ"/>
                                     <constraint firstItem="ez9-Wo-xlw" firstAttribute="top" secondItem="n3e-7Y-mEk" secondAttribute="top" id="XHz-SI-sM7"/>
                                     <constraint firstAttribute="trailing" secondItem="ez9-Wo-xlw" secondAttribute="trailing" id="gHa-AX-6qV"/>
@@ -186,11 +226,19 @@
                         </constraints>
                     </view>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-                    <size key="freeformSize" width="320" height="568"/>
+                    <size key="freeformSize" width="320" height="900"/>
+                    <connections>
+                        <outlet property="cardFamily" destination="Xn6-AZ-utA" id="RTE-iF-1tP"/>
+                        <outlet property="cardInteractions" destination="nKd-Ml-m04" id="dt5-js-uQO"/>
+                        <outlet property="cardName" destination="5oE-j8-8n1" id="ECH-WQ-mrX"/>
+                        <outlet property="cardParts" destination="OOL-wD-32o" id="Mo1-Qm-uNQ"/>
+                        <outlet property="cardPrecautions" destination="2Zw-bl-v7j" id="qUh-Uo-3yt"/>
+                        <outlet property="cardScientificName" destination="iJ0-AG-l9V" id="l3r-yA-Nch"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Nw3-SP-5pe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1876.875" y="-405.63380281690144"/>
+            <point key="canvasLocation" x="1876.8" y="-405.69715142428788"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="x97-xd-5Yy">
