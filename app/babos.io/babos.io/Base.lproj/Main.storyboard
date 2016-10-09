@@ -1,8 +1,9 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="CrT-Ai-hKw">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="CrT-Ai-hKw">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -147,6 +148,7 @@
                                                         <userDefinedRuntimeAttributes>
                                                             <userDefinedRuntimeAttribute type="string" keyPath="title" value="Nome Cientifico"/>
                                                             <userDefinedRuntimeAttribute type="string" keyPath="content" value=" "/>
+                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="showTitle" value="NO"/>
                                                         </userDefinedRuntimeAttributes>
                                                     </view>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xn6-AZ-utA" customClass="CardView" customModule="babos_io" customModuleProvider="target">
@@ -245,6 +247,103 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Nw3-SP-5pe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1876.8" y="-405.69715142428788"/>
+        </scene>
+        <!--Table View Controller-->
+        <scene sceneID="pvd-7p-Dxh">
+            <objects>
+                <tableViewController id="KLC-na-7rt" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="150" sectionHeaderHeight="28" sectionFooterHeight="28" id="cQ3-SO-WS0">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <sections>
+                            <tableViewSection id="cI7-of-vDj">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="rea-a5-F0Y">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="150"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="rea-a5-F0Y" id="ebS-fg-KCR">
+                                            <frame key="frameInset" width="375" height="149"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="babosa" translatesAutoresizingMaskIntoConstraints="NO" id="2Dx-8x-Q8N">
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" relation="lessThanOrEqual" constant="200" id="Iob-dr-MJT"/>
+                                                    </constraints>
+                                                </imageView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottomMargin" secondItem="2Dx-8x-Q8N" secondAttribute="bottom" id="BaJ-X4-vqW"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="2Dx-8x-Q8N" secondAttribute="trailing" id="CDj-Oo-tza"/>
+                                                <constraint firstItem="2Dx-8x-Q8N" firstAttribute="top" secondItem="ebS-fg-KCR" secondAttribute="topMargin" id="RRQ-ay-bbD"/>
+                                                <constraint firstItem="2Dx-8x-Q8N" firstAttribute="leading" secondItem="ebS-fg-KCR" secondAttribute="leadingMargin" id="goe-FN-xTU"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection headerTitle="alpaca" id="TyY-IL-1Fm">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="HSz-Oa-uru">
+                                        <rect key="frame" x="0.0" y="178" width="375" height="150"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="HSz-Oa-uru" id="Qgy-bp-fge">
+                                            <frame key="frameInset" width="375" height="149"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CKQ-3j-NmJ" customClass="CardView" customModule="babos_io" customModuleProvider="target">
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="boolean" keyPath="showTitle" value="NO"/>
+                                                    </userDefinedRuntimeAttributes>
+                                                </view>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="CKQ-3j-NmJ" secondAttribute="trailing" constant="8" id="Glz-3E-ggM"/>
+                                                <constraint firstItem="CKQ-3j-NmJ" firstAttribute="top" secondItem="Qgy-bp-fge" secondAttribute="top" constant="10" id="PKg-cl-pA9"/>
+                                                <constraint firstItem="CKQ-3j-NmJ" firstAttribute="leading" secondItem="Qgy-bp-fge" secondAttribute="leading" constant="8" id="Zqh-Ak-vZU"/>
+                                                <constraint firstAttribute="bottom" secondItem="CKQ-3j-NmJ" secondAttribute="bottom" constant="10" id="cut-Ps-ccY"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection headerTitle="alpaca" id="WCh-rP-sJr">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="JS9-t4-Jyd">
+                                        <rect key="frame" x="0.0" y="356" width="375" height="150"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="JS9-t4-Jyd" id="C8L-b4-elx">
+                                            <frame key="frameInset" width="375" height="149"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iCy-8o-Q4W" customClass="CardView" customModule="babos_io" customModuleProvider="target">
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="boolean" keyPath="showTitle" value="NO"/>
+                                                    </userDefinedRuntimeAttributes>
+                                                </view>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="iCy-8o-Q4W" secondAttribute="bottom" constant="10" id="5IW-bM-EdL"/>
+                                                <constraint firstItem="iCy-8o-Q4W" firstAttribute="top" secondItem="C8L-b4-elx" secondAttribute="top" constant="10" id="QKs-hM-SXZ"/>
+                                                <constraint firstAttribute="trailing" secondItem="iCy-8o-Q4W" secondAttribute="trailing" constant="8" id="Snk-h9-cRi"/>
+                                                <constraint firstItem="iCy-8o-Q4W" firstAttribute="leading" secondItem="C8L-b4-elx" secondAttribute="leading" constant="8" id="deS-jb-Pkk"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="KLC-na-7rt" id="6Kv-l9-gaa"/>
+                            <outlet property="delegate" destination="KLC-na-7rt" id="B5A-mH-Hak"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ofL-ki-8lf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2517.5999999999999" y="-317.09145427286359"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="x97-xd-5Yy">

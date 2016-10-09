@@ -11,6 +11,13 @@ import NibDesignable
 
 @IBDesignable
 class CardView: NibDesignable {
+    @IBOutlet weak var titleHeight: NSLayoutConstraint!
+    @IBInspectable var showTitle: Bool! = true {
+        didSet{
+            titleHeight.constant = showTitle == true ? 40 : 0
+            lblTitle.isHidden = !showTitle
+        }
+    }
     @IBOutlet weak var lblTitle: UILabel!
     @IBInspectable var title: String! {
         didSet{
