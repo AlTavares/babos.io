@@ -8,27 +8,28 @@
 
 import UIKit
 
-class InteractionsViewController: UIViewController {
+class RemumeViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     
-    var dataSource = [Plant]()
+    var dataSource = [RemumeItem]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.delegate = self
         tableView.dataSource = self
         tableView.rowHeight = UITableViewAutomaticDimension
-        tableView.estimatedRowHeight = 70
-        getPlants()
+        tableView.estimatedRowHeight = 150
+        getRemumeList()
     }
 
-    func getPlants()  {
-        InteractionsService().get {[weak self] result in
+    func getRemumeList()  {
+        RemumeService().get {[weak self] result in
             switch result {
-            case .success(let plants):
-                self?.dataSource = plants
+            case .success(let list):
+                self?.dataSource = list
                 self?.tableView.reloadData()
                 print(self?.dataSource.count)
+                print(list)
             case .failure(let message):
                 print("failure")
                 print(message)
@@ -37,26 +38,26 @@ class InteractionsViewController: UIViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let vc = segue.destination as! InteractionDetailTableViewController
-        vc.plant = sender as! Plant
+//        let vc = segue.destination as! InteractionDetailTableViewController
+//        vc.remumeItem = sender as! RemumeItem
     }
 
 }
 
-extension InteractionsViewController: UITableViewDataSource, UITableViewDelegate {
+extension RemumeViewController: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return dataSource.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: PlantTableViewCell.cellReuseIdentifier, for: indexPath) as! PlantTableViewCell
-        cell.configureCell(plant: dataSource[indexPath.row])
+        let cell = tableView.dequeueReusableCell(withIdentifier: RemumeItemTableViewCell.cellReuseIdentifier, for: indexPath) as! RemumeItemTableViewCell
+        cell.configureCell(item: dataSource[indexPath.row])
         return cell
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        performSegue(withIdentifier: "showInteractionDetail", sender: dataSource[indexPath.row])
+//        performSegue(withIdentifier: "showInteractionDetail", sender: dataSource[indexPath.row])
     }
     
 }

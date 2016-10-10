@@ -11,19 +11,6 @@ import NibDesignable
 
 @IBDesignable
 class CardView: NibDesignable {
-    @IBOutlet weak var titleHeight: NSLayoutConstraint!
-    @IBInspectable var showTitle: Bool! = true {
-        didSet{
-            titleHeight.constant = showTitle == true ? 40 : 0
-            lblTitle.isHidden = !showTitle
-        }
-    }
-    @IBOutlet weak var lblTitle: UILabel!
-    @IBInspectable var title: String! {
-        didSet{
-            lblTitle.text = title
-        }
-    }
     @IBOutlet weak var txtContent: UITextView!
     @IBInspectable var content: String! {
         didSet{
@@ -37,27 +24,16 @@ class CardView: NibDesignable {
             contentView.backgroundColor = contentViewColor
         }
     }
-    @IBOutlet weak var titleView: UIView!
-    @IBInspectable var titleViewColor: UIColor = UIColor.white {
-        didSet {
-            contentView.backgroundColor = contentViewColor
-        }
-    }
     
     @IBInspectable var cornerRadius: CGFloat = 4
     
     override func layoutSubviews() {
         backgroundColor = UIColor.clear
-        layer.cornerRadius = 10
-        layer.masksToBounds = true
-        clipsToBounds = true
-//        let maskPath = UIBezierPath(roundedRect: bounds,byRoundingCorners: .allCorners, cornerRadii: CGSize(width: cornerRadius, height: cornerRadius))
-//        let maskLayer = CAShapeLayer(layer: maskPath)
-//        maskLayer.frame = bounds
-//        maskLayer.path = maskPath.cgPath
-//        layer.mask = maskLayer
-        layer.borderWidth = 0.5
-        layer.borderColor = UIColor.black.withAlphaComponent(0.15).cgColor
+//        layer.cornerRadius = 10
+//        layer.masksToBounds = true
+//        clipsToBounds = true
+//        layer.borderWidth = 0.5
+//        layer.borderColor = UIColor.white.cgColor //UIColor.black.withAlphaComponent(0.15).cgColor
         
     }
     

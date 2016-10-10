@@ -10,6 +10,7 @@ import Foundation
 import Alamofire
 
 extension DataRequest {
+    @discardableResult
     public func responseInspector() -> Self {
         return responseJSON { response in
             debugPrint(response.request) // original URL request

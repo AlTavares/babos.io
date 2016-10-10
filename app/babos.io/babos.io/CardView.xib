@@ -9,9 +9,6 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CardView" customModule="babos_io" customModuleProvider="target">
             <connections>
                 <outlet property="contentView" destination="4yO-N5-c7v" id="o2v-uF-E96"/>
-                <outlet property="lblTitle" destination="AfT-gS-bqb" id="6pf-J7-RlO"/>
-                <outlet property="titleHeight" destination="GOm-kv-4nD" id="oY6-Hl-5h2"/>
-                <outlet property="titleView" destination="0dQ-Qb-ilP" id="tKB-OM-xTf"/>
                 <outlet property="txtContent" destination="JBg-iY-9Py" id="XTq-g4-RQp"/>
             </connections>
         </placeholder>
@@ -20,26 +17,6 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="167"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0dQ-Qb-ilP">
-                    <subviews>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AfT-gS-bqb">
-                            <constraints>
-                                <constraint firstAttribute="height" constant="40" id="GOm-kv-4nD"/>
-                            </constraints>
-                            <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="18"/>
-                            <nil key="textColor"/>
-                            <nil key="highlightedColor"/>
-                        </label>
-                    </subviews>
-                    <color key="backgroundColor" white="1" alpha="0.80000000000000004" colorSpace="calibratedWhite"/>
-                    <constraints>
-                        <constraint firstAttribute="bottom" secondItem="AfT-gS-bqb" secondAttribute="bottom" constant="2" id="9sp-I6-asQ"/>
-                        <constraint firstAttribute="trailing" secondItem="AfT-gS-bqb" secondAttribute="trailing" constant="4" id="F6V-5p-mcG"/>
-                        <constraint firstItem="AfT-gS-bqb" firstAttribute="top" secondItem="0dQ-Qb-ilP" secondAttribute="top" constant="2" id="WDl-ug-fI1"/>
-                        <constraint firstItem="AfT-gS-bqb" firstAttribute="leading" secondItem="0dQ-Qb-ilP" secondAttribute="leading" constant="4" id="pXa-uX-D51"/>
-                        <constraint firstAttribute="height" constant="44" id="u1S-j2-0hp"/>
-                    </constraints>
-                </view>
                 <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4yO-N5-c7v">
                     <subviews>
                         <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JBg-iY-9Py">
@@ -59,20 +36,16 @@
                         <constraint firstAttribute="bottom" secondItem="JBg-iY-9Py" secondAttribute="bottom" constant="4" id="6M7-zb-Xen"/>
                         <constraint firstAttribute="trailing" secondItem="JBg-iY-9Py" secondAttribute="trailing" constant="4" id="ATB-qK-tPz"/>
                         <constraint firstItem="JBg-iY-9Py" firstAttribute="leading" secondItem="4yO-N5-c7v" secondAttribute="leading" constant="4" id="Qct-c2-Ywf"/>
-                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="60" id="QjE-H9-PvK"/>
                         <constraint firstItem="JBg-iY-9Py" firstAttribute="top" secondItem="4yO-N5-c7v" secondAttribute="top" id="T4p-Em-SsE"/>
                     </constraints>
                 </view>
             </subviews>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             <constraints>
-                <constraint firstItem="4yO-N5-c7v" firstAttribute="top" secondItem="0dQ-Qb-ilP" secondAttribute="bottom" id="9rC-wC-6ax"/>
-                <constraint firstItem="0dQ-Qb-ilP" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="AvH-5L-xiC"/>
-                <constraint firstItem="0dQ-Qb-ilP" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="hyu-DP-UtY"/>
                 <constraint firstAttribute="trailing" secondItem="4yO-N5-c7v" secondAttribute="trailing" id="rUv-3W-9Ot"/>
+                <constraint firstItem="4yO-N5-c7v" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="s7K-Aj-dzP"/>
                 <constraint firstItem="4yO-N5-c7v" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="tH2-I0-Xrp"/>
                 <constraint firstAttribute="bottom" secondItem="4yO-N5-c7v" secondAttribute="bottom" id="uvR-kK-WuA"/>
-                <constraint firstAttribute="trailing" secondItem="0dQ-Qb-ilP" secondAttribute="trailing" id="zg3-zJ-dRW"/>
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>
             <nil key="simulatedTopBarMetrics"/>

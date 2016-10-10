@@ -10,7 +10,7 @@ import Foundation
 
 enum Environment {
     //static let host = "http://localhost:3000/"
-    static let host = "http://192.168.0.9:3000/"
+    static let host = "https://babosio.herokuapp.com/"
     static let baseURL = "\(host)parse/"
 
 }

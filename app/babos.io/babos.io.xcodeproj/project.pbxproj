@@ -12,7 +12,12 @@
 		DA3E136C1D91DFBD00DD4181 /* NibDesignable.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA3E136B1D91DFBD00DD4181 /* NibDesignable.framework */; };
 		DA3E136E1D91FDD100DD4181 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3E136D1D91FDD100DD4181 /* CardView.swift */; };
 		DA3E13701D91FE6600DD4181 /* CardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA3E136F1D91FE6600DD4181 /* CardView.xib */; };
-		DA3E13721D9207D500DD4181 /* InteractionDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3E13711D9207D500DD4181 /* InteractionDetailViewController.swift */; };
+		DA5A1ACC1DAB071C006BBE83 /* Private.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5A1ACB1DAB071C006BBE83 /* Private.swift */; };
+		DA5A1ACE1DAB1CF1006BBE83 /* InteractionDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5A1ACD1DAB1CF1006BBE83 /* InteractionDetailTableViewController.swift */; };
+		DA5A1AD01DAB3222006BBE83 /* RemumeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5A1ACF1DAB3222006BBE83 /* RemumeViewController.swift */; };
+		DA5A1AD21DAB329A006BBE83 /* RemumeItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5A1AD11DAB329A006BBE83 /* RemumeItemModel.swift */; };
+		DA5A1AD41DAB37D4006BBE83 /* RemumeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5A1AD31DAB37D4006BBE83 /* RemumeService.swift */; };
+		DA5A1AD61DAB3867006BBE83 /* RemumeItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5A1AD51DAB3867006BBE83 /* RemumeItemTableViewCell.swift */; };
 		DAD003201D876AB600253062 /* RequestExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD0031F1D876AB600253062 /* RequestExtension.swift */; };
 		DAD003221D876D1000253062 /* CacheableProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD003211D876D1000253062 /* CacheableProtocol.swift */; };
 		DAED38BC1D8F2C7900634088 /* Haneke.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAED38BB1D8F2C7900634088 /* Haneke.framework */; };
@@ -31,10 +36,9 @@
 		DAFCA1241D7CC27100F4881E /* InteractionsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFCA1231D7CC27100F4881E /* InteractionsService.swift */; };
 		DAFCA1271D7CC28B00F4881E /* GettableProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFCA1261D7CC28B00F4881E /* GettableProtocol.swift */; };
 		DAFCA12B1D7CC33000F4881E /* PlantModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFCA12A1D7CC33000F4881E /* PlantModel.swift */; };
-		DAFCA12D1D7CCC2B00F4881E /* MultiLanguageString.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFCA12C1D7CCC2B00F4881E /* MultiLanguageString.swift */; };
+		DAFCA12D1D7CCC2B00F4881E /* MultiLanguageObjects.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFCA12C1D7CCC2B00F4881E /* MultiLanguageObjects.swift */; };
 		DAFCA12F1D7CD01800F4881E /* ReferenceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFCA12E1D7CD01800F4881E /* ReferenceModel.swift */; };
 		DAFCA1311D7CD32900F4881E /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFCA1301D7CD32900F4881E /* Environment.swift */; };
-		DAFCA1331D7CD40200F4881E /* Private.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFCA1321D7CD40200F4881E /* Private.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,7 +57,12 @@
 		DA3E136B1D91DFBD00DD4181 /* NibDesignable.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NibDesignable.framework; path = Carthage/Build/iOS/NibDesignable.framework; sourceTree = "<group>"; };
 		DA3E136D1D91FDD100DD4181 /* CardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		DA3E136F1D91FE6600DD4181 /* CardView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CardView.xib; sourceTree = "<group>"; };
-		DA3E13711D9207D500DD4181 /* InteractionDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InteractionDetailViewController.swift; sourceTree = "<group>"; };
+		DA5A1ACB1DAB071C006BBE83 /* Private.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Private.swift; sourceTree = "<group>"; };
+		DA5A1ACD1DAB1CF1006BBE83 /* InteractionDetailTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InteractionDetailTableViewController.swift; sourceTree = "<group>"; };
+		DA5A1ACF1DAB3222006BBE83 /* RemumeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemumeViewController.swift; sourceTree = "<group>"; };
+		DA5A1AD11DAB329A006BBE83 /* RemumeItemModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemumeItemModel.swift; sourceTree = "<group>"; };
+		DA5A1AD31DAB37D4006BBE83 /* RemumeService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemumeService.swift; sourceTree = "<group>"; };
+		DA5A1AD51DAB3867006BBE83 /* RemumeItemTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RemumeItemTableViewCell.swift; path = ../RemumeItemTableViewCell.swift; sourceTree = "<group>"; };
 		DAD0031F1D876AB600253062 /* RequestExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestExtension.swift; sourceTree = "<group>"; };
 		DAD003211D876D1000253062 /* CacheableProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CacheableProtocol.swift; sourceTree = "<group>"; };
 		DAED38BB1D8F2C7900634088 /* Haneke.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Haneke.framework; path = Carthage/Build/iOS/Haneke.framework; sourceTree = "<group>"; };
@@ -76,10 +85,9 @@
 		DAFCA1231D7CC27100F4881E /* InteractionsService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InteractionsService.swift; sourceTree = "<group>"; };
 		DAFCA1261D7CC28B00F4881E /* GettableProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GettableProtocol.swift; sourceTree = "<group>"; };
 		DAFCA12A1D7CC33000F4881E /* PlantModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlantModel.swift; sourceTree = "<group>"; };
-		DAFCA12C1D7CCC2B00F4881E /* MultiLanguageString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MultiLanguageString.swift; sourceTree = "<group>"; };
+		DAFCA12C1D7CCC2B00F4881E /* MultiLanguageObjects.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MultiLanguageObjects.swift; sourceTree = "<group>"; };
 		DAFCA12E1D7CD01800F4881E /* ReferenceModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReferenceModel.swift; sourceTree = "<group>"; };
 		DAFCA1301D7CD32900F4881E /* Environment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
-		DAFCA1321D7CD40200F4881E /* Private.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Private.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,8 +126,9 @@
 		DAED38BD1D8F31AB00634088 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				DA5A1ACF1DAB3222006BBE83 /* RemumeViewController.swift */,
 				DAFCA0F61D7CBF0300F4881E /* InteractionsViewController.swift */,
-				DA3E13711D9207D500DD4181 /* InteractionDetailViewController.swift */,
+				DA5A1ACD1DAB1CF1006BBE83 /* InteractionDetailTableViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -127,9 +136,12 @@
 		DAED38C01D8F320900634088 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				DA5A1AD51DAB3867006BBE83 /* RemumeItemTableViewCell.swift */,
 				DAED38BE1D8F320500634088 /* PlantTableViewCell.swift */,
 				DA3E136D1D91FDD100DD4181 /* CardView.swift */,
 				DA3E136F1D91FE6600DD4181 /* CardView.xib */,
+				DAFCA0F81D7CBF0300F4881E /* Main.storyboard */,
+				DAFCA0FD1D7CBF0300F4881E /* LaunchScreen.storyboard */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -158,8 +170,8 @@
 			children = (
 				DAFCA0F41D7CBF0300F4881E /* AppDelegate.swift */,
 				DA27189D1D80E73500977799 /* NetworkReachability.swift */,
-				DAFCA1321D7CD40200F4881E /* Private.swift */,
 				DAFCA1301D7CD32900F4881E /* Environment.swift */,
+				DA5A1ACB1DAB071C006BBE83 /* Private.swift */,
 				DA27189C1D80E0F800977799 /* Extensions */,
 				DAFCA1291D7CC31900F4881E /* Models */,
 				DAFCA1281D7CC29200F4881E /* Protocols */,
@@ -167,8 +179,6 @@
 				DAED38BD1D8F31AB00634088 /* Controllers */,
 				DAED38C01D8F320900634088 /* Views */,
 				DAFCA0FB1D7CBF0300F4881E /* Assets.xcassets */,
-				DAFCA0F81D7CBF0300F4881E /* Main.storyboard */,
-				DAFCA0FD1D7CBF0300F4881E /* LaunchScreen.storyboard */,
 				DAFCA1001D7CBF0300F4881E /* Info.plist */,
 				DA2718981D80E08B00977799 /* CacheKeys.swift */,
 			);
@@ -201,6 +211,7 @@
 			isa = PBXGroup;
 			children = (
 				DAFCA1231D7CC27100F4881E /* InteractionsService.swift */,
+				DA5A1AD31DAB37D4006BBE83 /* RemumeService.swift */,
 			);
 			name = Services;
 			sourceTree = "<group>";
@@ -218,8 +229,9 @@
 			isa = PBXGroup;
 			children = (
 				DAFCA12A1D7CC33000F4881E /* PlantModel.swift */,
+				DA5A1AD11DAB329A006BBE83 /* RemumeItemModel.swift */,
 				DAFCA12E1D7CD01800F4881E /* ReferenceModel.swift */,
-				DAFCA12C1D7CCC2B00F4881E /* MultiLanguageString.swift */,
+				DAFCA12C1D7CCC2B00F4881E /* MultiLanguageObjects.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -352,19 +364,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DAFCA12D1D7CCC2B00F4881E /* MultiLanguageString.swift in Sources */,
+				DAFCA12D1D7CCC2B00F4881E /* MultiLanguageObjects.swift in Sources */,
 				DAFCA12B1D7CC33000F4881E /* PlantModel.swift in Sources */,
 				DAED38C21D8F325E00634088 /* TableViewCellExtension.swift in Sources */,
 				DAFCA1241D7CC27100F4881E /* InteractionsService.swift in Sources */,
 				DAFCA0F71D7CBF0300F4881E /* InteractionsViewController.swift in Sources */,
+				DA5A1ACE1DAB1CF1006BBE83 /* InteractionDetailTableViewController.swift in Sources */,
 				DAFCA1311D7CD32900F4881E /* Environment.swift in Sources */,
+				DA5A1AD21DAB329A006BBE83 /* RemumeItemModel.swift in Sources */,
+				DA5A1AD61DAB3867006BBE83 /* RemumeItemTableViewCell.swift in Sources */,
+				DA5A1AD01DAB3222006BBE83 /* RemumeViewController.swift in Sources */,
+				DA5A1ACC1DAB071C006BBE83 /* Private.swift in Sources */,
+				DA5A1AD41DAB37D4006BBE83 /* RemumeService.swift in Sources */,
 				DAD003201D876AB600253062 /* RequestExtension.swift in Sources */,
 				DAFCA1271D7CC28B00F4881E /* GettableProtocol.swift in Sources */,
 				DA27189E1D80E73500977799 /* NetworkReachability.swift in Sources */,
 				DA2718991D80E08B00977799 /* CacheKeys.swift in Sources */,
 				DAED38BF1D8F320500634088 /* PlantTableViewCell.swift in Sources */,
-				DAFCA1331D7CD40200F4881E /* Private.swift in Sources */,
-				DA3E13721D9207D500DD4181 /* InteractionDetailViewController.swift in Sources */,
 				DAFCA0F51D7CBF0300F4881E /* AppDelegate.swift in Sources */,
 				DAFCA12F1D7CD01800F4881E /* ReferenceModel.swift in Sources */,
 				DA3E136E1D91FDD100DD4181 /* CardView.swift in Sources */,

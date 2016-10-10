@@ -10,4 +10,5 @@ import Foundation
 
 struct CacheKeys {
     static let Interactions = "interactions"
+    static let RemumeList = "remume"
 }

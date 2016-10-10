@@ -18,7 +18,8 @@ struct InteractionsService: Gettable, Cacheable {
     let path = "classes/Interaction"
 
     public func get(_ completionHandler: @escaping (Result<[Plant]>) -> Void) {
-        fetch(fromUrl: Environment.baseURL + path, fromCache: CacheKeys.Interactions, completionHandler: completionHandler)
+        let params = ["order" : "name"]
+        fetch(fromURL: Environment.baseURL + path, fromCache: CacheKeys.Interactions, parameters: params, encoding: URLEncoding.queryString, headers: Private.authHeaders, completionHandler: completionHandler)
     }
 
 }

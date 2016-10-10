@@ -13,19 +13,20 @@ import Alamofire
 
 protocol Cacheable {
     associatedtype Data
-    
 }
 
 extension Cacheable where Self: Gettable, Self.Data: Mappable {
     
-    func fetch(fromUrl url: String, fromCache cacheKey: String, completionHandler: @escaping (Result<[Data]>) -> Void) {
+    func fetch(fromURL url: URLConvertible, fromCache cacheKey: String, method: HTTPMethod = .get, parameters: Parameters? = nil, encoding: ParameterEncoding? = nil, headers: HTTPHeaders? = nil, completionHandler: @escaping (Result<[Data]>) -> Void) {
+        
         fetch(fromCache: cacheKey, completionHandler: completionHandler)
-        fetch(fromURL: url) { result in
+        get(fromURL: url, method: method, parameters: parameters, encoding: encoding, headers: headers)
+        { result in
             completionHandler(result)
             if let data = result.value {
                 if let json = data.toJSONString() {
                     let cache = Shared.stringCache
-                    cache.set(value: json, key: CacheKeys.Interactions)
+                    cache.set(value: json, key: cacheKey)
                 }
             }
         }
