@@ -12,6 +12,11 @@ class PlantTableViewCell: UITableViewCell {
     @IBOutlet weak var name: UILabel!
     @IBOutlet weak var scientificName: UILabel!
 
+    override func prepareForReuse() {
+        name.text = ""
+        scientificName.text = ""
+    }
+    
     func configureCell(plant: Plant){
         name.text = plant.name.description
         scientificName.text = plant.scientificName.description
