@@ -49,8 +49,8 @@ struct MultiLanguageArray: MultiLanguageObject {
     var pt: [String]?
     var en: [String]?
     var es: [String]?
-    var current: [String] {
-        return pt!
+    var current: [String]? {
+        return pt
     }
     
     init?(map: Map) {
