@@ -13,6 +13,7 @@ class InteractionsViewController: UIViewController, SearchableDataSource {
     
     var filterableDataSource = FilterableDataSource<Plant>()
     var searchController: UISearchController!
+    @IBOutlet weak var searchButton: UIBarButtonItem!
     
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -74,8 +74,19 @@ class RemumeViewController: UIViewController, SearchableDataSource {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        //        let vc = segue.destination as! InteractionDetailTableViewController
-        //        vc.remumeItem = sender as! RemumeItem
+        if let vc = segue.destination as? InteractionsViewController {
+            let item = sender as! RemumeItem
+            vc.searchButton.isEnabled = false
+            vc.searchButton.tintColor = UIColor.clear
+            vc.filterableDataSource.filtered = true
+            vc.filterableDataSource.filter = { plant in
+                guard let groups = plant.interactionGroups else {
+                    return false
+                }
+                return groups.contains(item.group)
+            }
+
+        }
     }
     
 }
@@ -93,12 +104,9 @@ extension RemumeViewController: UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        //        performSegue(withIdentifier: "showInteractionDetail", sender: dataSource[indexPath.row])
+        performSegue(withIdentifier: "ShowPlants", sender: filterableDataSource.dataSource[indexPath.row])
     }
-    
-    func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
-        return UIView()
-    }
+
 }
 
 extension RemumeViewController: UISearchBarDelegate {

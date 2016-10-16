@@ -16,7 +16,7 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="164" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="hab-Au-FmE">
@@ -104,6 +104,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="searchButton" destination="c4A-xa-RPt" id="Arx-b9-hGa"/>
                         <outlet property="tableView" destination="hab-Au-FmE" id="8LX-p5-kKg"/>
                         <segue destination="KLC-na-7rt" kind="show" identifier="showInteractionDetail" id="aU8-qe-o9p"/>
                     </connections>
@@ -406,7 +407,7 @@
                                 <inset key="scrollIndicatorInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="4"/>
                                 <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="RemumeItemTableViewCell" rowHeight="160" id="IPL-Fm-3QA" customClass="RemumeItemTableViewCell" customModule="babos_io" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="RemumeItemTableViewCell" rowHeight="160" id="IPL-Fm-3QA" customClass="RemumeItemTableViewCell" customModule="babos_io" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="160"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="IPL-Fm-3QA" id="hMT-Ri-HsF">
@@ -431,46 +432,59 @@
                                                             </attributedString>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hMk-4n-hv6">
-                                                            <attributedString key="attributedText">
-                                                                <fragment content="Description">
-                                                                    <attributes>
-                                                                        <color key="NSColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                                        <font key="NSFont" size="17" name="Avenir-Medium"/>
-                                                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                                    </attributes>
-                                                                </fragment>
-                                                            </attributedString>
-                                                            <nil key="highlightedColor"/>
-                                                        </label>
-                                                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RwY-Ti-Mzi">
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6wu-L0-01V">
+                                                            <subviews>
+                                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="Sw6-rY-xLA">
+                                                                    <subviews>
+                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hMk-4n-hv6">
+                                                                            <attributedString key="attributedText">
+                                                                                <fragment content="Description">
+                                                                                    <attributes>
+                                                                                        <color key="NSColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                                        <font key="NSFont" size="17" name="Avenir-Medium"/>
+                                                                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                                    </attributes>
+                                                                                </fragment>
+                                                                            </attributedString>
+                                                                            <nil key="highlightedColor"/>
+                                                                        </label>
+                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="Medications" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FEJ-Yp-3NF">
+                                                                            <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
+                                                                            <nil key="textColor"/>
+                                                                            <nil key="highlightedColor"/>
+                                                                        </label>
+                                                                    </subviews>
+                                                                </stackView>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&gt;" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HgD-CP-aSu">
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="width" constant="20" id="LAt-fg-sKg"/>
+                                                                    </constraints>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
                                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                             <constraints>
-                                                                <constraint firstAttribute="height" id="pCx-5X-d7y"/>
+                                                                <constraint firstItem="HgD-CP-aSu" firstAttribute="centerY" secondItem="6wu-L0-01V" secondAttribute="centerY" id="5TR-es-7Fx"/>
+                                                                <constraint firstAttribute="trailing" secondItem="HgD-CP-aSu" secondAttribute="trailing" id="Atb-id-yef"/>
+                                                                <constraint firstItem="HgD-CP-aSu" firstAttribute="leading" secondItem="Sw6-rY-xLA" secondAttribute="trailing" id="GHu-KF-3dE"/>
+                                                                <constraint firstItem="Sw6-rY-xLA" firstAttribute="top" secondItem="6wu-L0-01V" secondAttribute="top" id="I8W-tp-ktH"/>
+                                                                <constraint firstItem="Sw6-rY-xLA" firstAttribute="leading" secondItem="6wu-L0-01V" secondAttribute="leading" constant="16" id="TE2-Zn-Nhc"/>
+                                                                <constraint firstItem="Sw6-rY-xLA" firstAttribute="height" secondItem="6wu-L0-01V" secondAttribute="height" id="p47-o8-aTp"/>
+                                                                <constraint firstAttribute="bottom" secondItem="Sw6-rY-xLA" secondAttribute="bottom" id="uIB-bV-r4k"/>
                                                             </constraints>
-                                                            <attributedString key="attributedText">
-                                                                <fragment content="Medications">
-                                                                    <attributes>
-                                                                        <font key="NSFont" size="16" name="HelveticaNeue"/>
-                                                                        <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                                    </attributes>
-                                                                </fragment>
-                                                            </attributedString>
-                                                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                                        </textView>
+                                                        </view>
                                                     </subviews>
-                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <color key="backgroundColor" red="0.95939522981643677" green="0.95941776037216187" blue="0.95940560102462769" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="bottom" secondItem="RwY-Ti-Mzi" secondAttribute="bottom" constant="2" id="0fq-Tj-1Kc"/>
-                                                        <constraint firstItem="RwY-Ti-Mzi" firstAttribute="top" secondItem="hMk-4n-hv6" secondAttribute="bottom" id="9I4-39-Luh"/>
-                                                        <constraint firstItem="RwY-Ti-Mzi" firstAttribute="leading" secondItem="vLN-3I-5gJ" secondAttribute="leading" constant="8" id="9el-jv-g0h"/>
-                                                        <constraint firstItem="cFf-aU-P6X" firstAttribute="leading" secondItem="vLN-3I-5gJ" secondAttribute="leading" id="FAy-Ub-tYG"/>
-                                                        <constraint firstAttribute="trailing" secondItem="RwY-Ti-Mzi" secondAttribute="trailing" id="OPh-ah-otx"/>
-                                                        <constraint firstItem="hMk-4n-hv6" firstAttribute="leading" secondItem="vLN-3I-5gJ" secondAttribute="leading" constant="4" id="Tg3-BE-M9K"/>
-                                                        <constraint firstItem="hMk-4n-hv6" firstAttribute="top" secondItem="cFf-aU-P6X" secondAttribute="bottom" id="iTq-TI-p2V"/>
+                                                        <constraint firstItem="cFf-aU-P6X" firstAttribute="leading" secondItem="vLN-3I-5gJ" secondAttribute="leading" constant="10" id="FAy-Ub-tYG"/>
+                                                        <constraint firstAttribute="bottom" secondItem="6wu-L0-01V" secondAttribute="bottom" id="J2g-YR-7aL"/>
                                                         <constraint firstAttribute="trailing" secondItem="cFf-aU-P6X" secondAttribute="trailing" id="kd8-0J-hdx"/>
                                                         <constraint firstItem="cFf-aU-P6X" firstAttribute="top" secondItem="vLN-3I-5gJ" secondAttribute="top" id="mMa-xM-5Ds"/>
-                                                        <constraint firstAttribute="trailing" secondItem="hMk-4n-hv6" secondAttribute="trailing" id="yuU-DX-ENX"/>
+                                                        <constraint firstAttribute="trailing" secondItem="6wu-L0-01V" secondAttribute="trailing" id="ru5-ah-js9"/>
+                                                        <constraint firstItem="6wu-L0-01V" firstAttribute="leading" secondItem="vLN-3I-5gJ" secondAttribute="leading" id="tqr-Hi-401"/>
+                                                        <constraint firstItem="6wu-L0-01V" firstAttribute="top" secondItem="cFf-aU-P6X" secondAttribute="bottom" id="y9l-lJ-qe5"/>
                                                     </constraints>
                                                 </view>
                                             </subviews>
@@ -484,14 +498,13 @@
                                         <connections>
                                             <outlet property="group" destination="cFf-aU-P6X" id="17B-xA-CRI"/>
                                             <outlet property="groupDescription" destination="hMk-4n-hv6" id="3z9-U9-map"/>
-                                            <outlet property="listHeight" destination="pCx-5X-d7y" id="mgb-TL-aOl"/>
-                                            <outlet property="medicationList" destination="RwY-Ti-Mzi" id="1JS-Ee-yzN"/>
+                                            <outlet property="medicationList" destination="FEJ-Yp-3NF" id="3Zk-Si-wdv"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
                         </subviews>
-                        <color key="backgroundColor" red="0.94707559610000003" green="0.94760621700000003" blue="0.98011013390000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.95939522981643677" green="0.95941776037216187" blue="0.95940560102462769" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="sm1-aS-gxy" firstAttribute="leading" secondItem="OXD-0p-UCe" secondAttribute="leading" id="Ijd-8G-J9m"/>
                             <constraint firstAttribute="trailing" secondItem="sm1-aS-gxy" secondAttribute="trailing" id="MpF-GI-1bq"/>
@@ -510,11 +523,12 @@
                     <size key="freeformSize" width="375" height="600"/>
                     <connections>
                         <outlet property="tableView" destination="sm1-aS-gxy" id="mxp-mf-rgZ"/>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="ShowPlants" id="Kno-Ew-Ipq"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SeR-w0-96p" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1633" y="408"/>
+            <point key="canvasLocation" x="1632.8" y="407.49625187406298"/>
         </scene>
         <!--Remume-->
         <scene sceneID="usq-3c-HC9">
@@ -547,6 +561,7 @@
         <image name="babosa" width="200" height="132"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="Kno-Ew-Ipq"/>
         <segue reference="g2g-cc-ept"/>
     </inferredMetricsTieBreakers>
 </document>
