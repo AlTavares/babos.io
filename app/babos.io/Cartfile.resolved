@@ -1,5 +1,5 @@
 github "Alamofire/Alamofire" "4.0.1"
-github "Haneke/HanekeSwift" "3fb394f3769303685c9e0e692c9065e6a037b30a"
+github "Haneke/HanekeSwift" "6e48f795c5928101043a5e11e1377877e042012d"
 github "mbogh/NibDesignable" "3.0.0"
 github "Quick/Nimble" "v5.0.0"
 github "Hearst-DD/ObjectMapper" "2.1.0"
