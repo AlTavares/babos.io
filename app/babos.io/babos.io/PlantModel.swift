@@ -16,7 +16,7 @@ struct Plant: Mappable {
     var parts: MultiLanguageString!
     var interactions: MultiLanguageString!
     var precautions: MultiLanguageString!
-    var interactionGroups: [String]!
+    var interactionGroups: [String]?
     var references: Reference!
 
     init?(map: Map) {
