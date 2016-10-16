@@ -10,7 +10,13 @@ import Foundation
 
 struct FilterableDataSource<DataType> {
     var filtered = false
-    var filter: ((DataType) -> Bool)?
+    var filter: ((DataType) -> Bool)? {
+        willSet {
+            if let filter = newValue {
+                self.filteredDataSource = fullDataSource.filter(filter)
+            }
+        }
+    }
     private var filteredDataSource = [DataType]()
     private var fullDataSource = [DataType]()
     
@@ -24,7 +30,7 @@ struct FilterableDataSource<DataType> {
         set {
             fullDataSource = newValue
             if let filter = filter {
-                filteredDataSource = newValue.filter(filter)
+                self.filteredDataSource = newValue.filter(filter)
             }
         }
     }

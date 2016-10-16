@@ -12,13 +12,15 @@ protocol ContentSizeDelegate {
     func contentSizeDidChange(size: CGSize)
 }
 
-class RemumeViewController: UIViewController {
+class RemumeViewController: UIViewController, SearchableDataSource {
     @IBOutlet weak var tableView: UITableView!
     var contentSizeDelegate: ContentSizeDelegate?
     var filterableDataSource = FilterableDataSource<RemumeItem>()
+    var searchController: UISearchController!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setSearchBarController(delegate: self)
         tableView.delegate = self
         tableView.dataSource = self
         tableView.rowHeight = UITableViewAutomaticDimension
@@ -38,6 +40,31 @@ class RemumeViewController: UIViewController {
                 print(message)
             }
         }
+    }
+    
+    func filterDataSource(text: String) {
+        filterableDataSource.filter = { item in
+            return item.group.lowercased().contains(text) ||
+                item.groupDescription.description.lowercased().contains(text) ||
+                self.containsMedication(item: item, searchText: text)
+        }
+        tableView.reloadData()
+    }
+    
+    func containsMedication(item: RemumeItem ,searchText: String) -> Bool {
+        guard let meds = item.medicines.current else {
+            return false
+        }
+        for med in meds {
+            if med.lowercased().contains(searchText) {
+                return true
+            }
+        }
+        return false
+    }
+    
+    @IBAction func showSearchButton(_ sender: AnyObject) {
+        showSearchBar()
     }
     
     func reloadTableView() {
@@ -74,3 +101,21 @@ extension RemumeViewController: UITableViewDataSource, UITableViewDelegate {
     }
 }
 
+extension RemumeViewController: UISearchBarDelegate {
+    
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        searchBar.resignFirstResponder()
+        dismiss(animated: true, completion: nil)
+    }
+    
+    func searchBarTextDidEndEditing(_ searchBar: UISearchBar) {
+        initSearch(withText: searchBar.text)
+    }
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        initSearch(withText: searchText)
+    }
+    func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
+        filterableDataSource.filtered = false
+        tableView.reloadData()
+    }
+}

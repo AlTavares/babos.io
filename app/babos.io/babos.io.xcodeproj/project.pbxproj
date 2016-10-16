@@ -13,6 +13,7 @@
 		DA3E136E1D91FDD100DD4181 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3E136D1D91FDD100DD4181 /* CardView.swift */; };
 		DA3E13701D91FE6600DD4181 /* CardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA3E136F1D91FE6600DD4181 /* CardView.xib */; };
 		DA4F89F41DB3E5A9001F45E6 /* FilterableDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4F89F31DB3E5A9001F45E6 /* FilterableDataSource.swift */; };
+		DA4F89F61DB41FA3001F45E6 /* SearchableDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4F89F51DB41FA3001F45E6 /* SearchableDataSource.swift */; };
 		DA5A1ACC1DAB071C006BBE83 /* Private.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5A1ACB1DAB071C006BBE83 /* Private.swift */; };
 		DA5A1ACE1DAB1CF1006BBE83 /* InteractionDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5A1ACD1DAB1CF1006BBE83 /* InteractionDetailTableViewController.swift */; };
 		DA5A1AD01DAB3222006BBE83 /* RemumeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5A1ACF1DAB3222006BBE83 /* RemumeViewController.swift */; };
@@ -59,6 +60,7 @@
 		DA3E136D1D91FDD100DD4181 /* CardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		DA3E136F1D91FE6600DD4181 /* CardView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CardView.xib; sourceTree = "<group>"; };
 		DA4F89F31DB3E5A9001F45E6 /* FilterableDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterableDataSource.swift; sourceTree = "<group>"; };
+		DA4F89F51DB41FA3001F45E6 /* SearchableDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchableDataSource.swift; sourceTree = "<group>"; };
 		DA5A1ACB1DAB071C006BBE83 /* Private.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Private.swift; sourceTree = "<group>"; };
 		DA5A1ACD1DAB1CF1006BBE83 /* InteractionDetailTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InteractionDetailTableViewController.swift; sourceTree = "<group>"; };
 		DA5A1ACF1DAB3222006BBE83 /* RemumeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemumeViewController.swift; sourceTree = "<group>"; };
@@ -223,7 +225,7 @@
 			children = (
 				DAD003211D876D1000253062 /* CacheableProtocol.swift */,
 				DAFCA1261D7CC28B00F4881E /* GettableProtocol.swift */,
-				DA4F89F31DB3E5A9001F45E6 /* FilterableDataSource.swift */,
+				DA4F89F51DB41FA3001F45E6 /* SearchableDataSource.swift */,
 			);
 			name = Protocols;
 			sourceTree = "<group>";
@@ -235,6 +237,7 @@
 				DA5A1AD11DAB329A006BBE83 /* RemumeItemModel.swift */,
 				DAFCA12E1D7CD01800F4881E /* ReferenceModel.swift */,
 				DAFCA12C1D7CCC2B00F4881E /* MultiLanguageObjects.swift */,
+				DA4F89F31DB3E5A9001F45E6 /* FilterableDataSource.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -387,6 +390,7 @@
 				DAED38BF1D8F320500634088 /* PlantTableViewCell.swift in Sources */,
 				DAFCA0F51D7CBF0300F4881E /* AppDelegate.swift in Sources */,
 				DAFCA12F1D7CD01800F4881E /* ReferenceModel.swift in Sources */,
+				DA4F89F61DB41FA3001F45E6 /* SearchableDataSource.swift in Sources */,
 				DA3E136E1D91FDD100DD4181 /* CardView.swift in Sources */,
 				DAD003221D876D1000253062 /* CacheableProtocol.swift in Sources */,
 			);

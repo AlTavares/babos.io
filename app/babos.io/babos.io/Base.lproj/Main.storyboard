@@ -43,7 +43,6 @@
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IkE-N4-7S5">
                                                                     <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="18"/>
-                                                                    <color key="textColor" red="0.16862745100000001" green="0.4549019608" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="babosa" translatesAutoresizingMaskIntoConstraints="NO" id="42p-BL-Wsf"/>
@@ -97,7 +96,13 @@
                             <constraint firstItem="hab-Au-FmE" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="zlL-rG-9si"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Plantas" id="8jx-dZ-21p"/>
+                    <navigationItem key="navigationItem" title="Plantas" id="8jx-dZ-21p">
+                        <barButtonItem key="rightBarButtonItem" systemItem="search" id="c4A-xa-RPt">
+                            <connections>
+                                <action selector="showSearchButton:" destination="BYZ-38-t0r" id="Lr2-wf-Jbb"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="hab-Au-FmE" id="8LX-p5-kKg"/>
                         <segue destination="KLC-na-7rt" kind="show" identifier="showInteractionDetail" id="aU8-qe-o9p"/>
@@ -262,32 +267,41 @@
                             </tableViewSection>
                             <tableViewSection headerTitle="Interações" id="BwQ-1U-Qh1">
                                 <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="Ado-jY-Z1n">
-                                        <rect key="frame" x="0.0" y="1132" width="375" height="150"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="170" id="Ado-jY-Z1n">
+                                        <rect key="frame" x="0.0" y="1132" width="375" height="170"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Ado-jY-Z1n" id="yOF-BE-2XH">
-                                            <frame key="frameInset" width="375" height="150"/>
+                                            <frame key="frameInset" width="375" height="170"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4nG-Bn-3gD">
                                                     <constraints>
-                                                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="150" id="ukw-pk-P4P"/>
+                                                        <constraint firstAttribute="height" constant="150" id="MoQ-4S-9S9"/>
                                                     </constraints>
                                                     <connections>
                                                         <segue destination="1gt-EP-PFP" kind="embed" id="QTT-zn-dci"/>
                                                     </connections>
                                                 </containerView>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1Ix-Qm-3Dz">
+                                                    <color key="backgroundColor" red="0.96552139520645142" green="0.97194844484329224" blue="0.97510546445846558" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="20" id="YW9-Ua-YS3"/>
+                                                    </constraints>
+                                                </view>
                                             </subviews>
                                             <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="1Ix-Qm-3Dz" secondAttribute="trailing" id="0Sg-Hu-znO"/>
+                                                <constraint firstItem="1Ix-Qm-3Dz" firstAttribute="top" secondItem="4nG-Bn-3gD" secondAttribute="bottom" id="9e9-pE-mSg"/>
+                                                <constraint firstAttribute="bottom" secondItem="1Ix-Qm-3Dz" secondAttribute="bottom" id="DHq-g2-83T"/>
                                                 <constraint firstAttribute="trailing" secondItem="4nG-Bn-3gD" secondAttribute="trailing" id="P7Y-hD-gtV"/>
                                                 <constraint firstItem="4nG-Bn-3gD" firstAttribute="leading" secondItem="yOF-BE-2XH" secondAttribute="leading" id="S6n-17-Neu"/>
                                                 <constraint firstItem="4nG-Bn-3gD" firstAttribute="top" secondItem="yOF-BE-2XH" secondAttribute="top" id="ajc-jt-vM2"/>
-                                                <constraint firstAttribute="bottom" secondItem="4nG-Bn-3gD" secondAttribute="bottom" id="sgI-DL-Lej"/>
+                                                <constraint firstItem="1Ix-Qm-3Dz" firstAttribute="leading" secondItem="yOF-BE-2XH" secondAttribute="leading" id="tEc-5H-Fpv"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="3LG-fx-rGp">
-                                        <rect key="frame" x="0.0" y="1282" width="375" height="150"/>
+                                        <rect key="frame" x="0.0" y="1302" width="375" height="150"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="3LG-fx-rGp" id="3Sk-dB-xBm">
                                             <frame key="frameInset" width="375" height="150"/>
@@ -299,7 +313,7 @@
                                             </subviews>
                                             <constraints>
                                                 <constraint firstAttribute="trailing" secondItem="SrM-gh-J2I" secondAttribute="trailing" constant="8" id="KKT-7H-nV2"/>
-                                                <constraint firstItem="SrM-gh-J2I" firstAttribute="top" secondItem="3Sk-dB-xBm" secondAttribute="top" constant="10" id="Vdh-JO-Nho"/>
+                                                <constraint firstItem="SrM-gh-J2I" firstAttribute="top" secondItem="3Sk-dB-xBm" secondAttribute="topMargin" id="XmW-nu-bMh"/>
                                                 <constraint firstAttribute="bottom" secondItem="SrM-gh-J2I" secondAttribute="bottom" constant="10" id="gGo-lE-xmd"/>
                                                 <constraint firstItem="SrM-gh-J2I" firstAttribute="leading" secondItem="3Sk-dB-xBm" secondAttribute="leading" constant="8" id="j4X-tf-eIQ"/>
                                             </constraints>
@@ -322,11 +336,12 @@
                         <outlet property="cardParts" destination="Jop-Os-841" id="hbW-Wf-QRg"/>
                         <outlet property="cardPrecautions" destination="1G5-wU-yYe" id="hgM-MW-yFT"/>
                         <outlet property="cardScientificName" destination="iCy-8o-Q4W" id="gQ8-ta-k8h"/>
+                        <outlet property="containerHeight" destination="MoQ-4S-9S9" id="aMK-j8-ASi"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ofL-ki-8lf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2499.5" y="-381"/>
+            <point key="canvasLocation" x="2498.4000000000001" y="-381.40929535232385"/>
         </scene>
         <!--Plantas-->
         <scene sceneID="x97-xd-5Yy">
@@ -401,7 +416,7 @@
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vLN-3I-5gJ">
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cFf-aU-P6X">
-                                                            <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                                            <color key="backgroundColor" red="0.95939522981643677" green="0.95941776037216187" blue="0.95940560102462769" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="35" id="lVg-LZ-K97"/>
                                                             </constraints>
@@ -409,7 +424,7 @@
                                                                 <fragment content="Group">
                                                                     <attributes>
                                                                         <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                                        <font key="NSFont" size="18" name="Avenir-Heavy"/>
+                                                                        <font key="NSFont" size="18" name="Avenir-Medium"/>
                                                                         <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" firstLineHeadIndent="4" tighteningFactorForTruncation="0.0"/>
                                                                     </attributes>
                                                                 </fragment>
@@ -484,7 +499,13 @@
                             <constraint firstItem="UKI-wP-4SD" firstAttribute="top" secondItem="sm1-aS-gxy" secondAttribute="bottom" id="npu-9S-3Yj"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Remume" id="NyB-o8-f7E"/>
+                    <navigationItem key="navigationItem" title="Remume" id="NyB-o8-f7E">
+                        <barButtonItem key="rightBarButtonItem" systemItem="search" id="Ryw-qR-pOl">
+                            <connections>
+                                <action selector="showSearchButton:" destination="1gt-EP-PFP" id="pef-h7-xWJ"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="375" height="600"/>
                     <connections>
@@ -526,6 +547,6 @@
         <image name="babosa" width="200" height="132"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="QTT-zn-dci"/>
+        <segue reference="g2g-cc-ept"/>
     </inferredMetricsTieBreakers>
 </document>

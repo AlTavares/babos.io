@@ -72,8 +72,9 @@ class InteractionDetailTableViewController: UITableViewController {
 extension InteractionDetailTableViewController: ContentSizeDelegate {
     
     func contentSizeDidChange(size: CGSize) {
+        remumeListViewController.tableView.isScrollEnabled = false
         remumeListViewController.tableView.bounces = false
-        containerHeight.constant = size.height
+        containerHeight.constant = size.height == 0 ? 0 : size.height + 10
     }
 
 }
