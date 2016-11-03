@@ -14,7 +14,6 @@
 		DA3E13701D91FE6600DD4181 /* CardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA3E136F1D91FE6600DD4181 /* CardView.xib */; };
 		DA4F89F41DB3E5A9001F45E6 /* FilterableDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4F89F31DB3E5A9001F45E6 /* FilterableDataSource.swift */; };
 		DA4F89F61DB41FA3001F45E6 /* SearchableDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4F89F51DB41FA3001F45E6 /* SearchableDataSource.swift */; };
-		DA5A1ACC1DAB071C006BBE83 /* Private.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5A1ACB1DAB071C006BBE83 /* Private.swift */; };
 		DA5A1ACE1DAB1CF1006BBE83 /* InteractionDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5A1ACD1DAB1CF1006BBE83 /* InteractionDetailTableViewController.swift */; };
 		DA5A1AD01DAB3222006BBE83 /* RemumeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5A1ACF1DAB3222006BBE83 /* RemumeViewController.swift */; };
 		DA5A1AD21DAB329A006BBE83 /* RemumeItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5A1AD11DAB329A006BBE83 /* RemumeItemModel.swift */; };
@@ -61,7 +60,6 @@
 		DA3E136F1D91FE6600DD4181 /* CardView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CardView.xib; sourceTree = "<group>"; };
 		DA4F89F31DB3E5A9001F45E6 /* FilterableDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterableDataSource.swift; sourceTree = "<group>"; };
 		DA4F89F51DB41FA3001F45E6 /* SearchableDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchableDataSource.swift; sourceTree = "<group>"; };
-		DA5A1ACB1DAB071C006BBE83 /* Private.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Private.swift; sourceTree = "<group>"; };
 		DA5A1ACD1DAB1CF1006BBE83 /* InteractionDetailTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InteractionDetailTableViewController.swift; sourceTree = "<group>"; };
 		DA5A1ACF1DAB3222006BBE83 /* RemumeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemumeViewController.swift; sourceTree = "<group>"; };
 		DA5A1AD11DAB329A006BBE83 /* RemumeItemModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemumeItemModel.swift; sourceTree = "<group>"; };
@@ -175,7 +173,6 @@
 				DAFCA0F41D7CBF0300F4881E /* AppDelegate.swift */,
 				DA27189D1D80E73500977799 /* NetworkReachability.swift */,
 				DAFCA1301D7CD32900F4881E /* Environment.swift */,
-				DA5A1ACB1DAB071C006BBE83 /* Private.swift */,
 				DA27189C1D80E0F800977799 /* Extensions */,
 				DAFCA1291D7CC31900F4881E /* Models */,
 				DAFCA1281D7CC29200F4881E /* Protocols */,
@@ -293,8 +290,9 @@
 				TargetAttributes = {
 					DAFCA0F01D7CBF0200F4881E = {
 						CreatedOnToolsVersion = 7.3.1;
-						DevelopmentTeam = Y9GCPAGMBN;
+						DevelopmentTeam = 6E775V5EG9;
 						LastSwiftMigration = 0800;
+						ProvisioningStyle = Automatic;
 					};
 					DAFCA1041D7CBF0300F4881E = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -381,7 +379,6 @@
 				DA5A1AD21DAB329A006BBE83 /* RemumeItemModel.swift in Sources */,
 				DA5A1AD61DAB3867006BBE83 /* RemumeItemTableViewCell.swift in Sources */,
 				DA5A1AD01DAB3222006BBE83 /* RemumeViewController.swift in Sources */,
-				DA5A1ACC1DAB071C006BBE83 /* Private.swift in Sources */,
 				DA5A1AD41DAB37D4006BBE83 /* RemumeService.swift in Sources */,
 				DAD003201D876AB600253062 /* RequestExtension.swift in Sources */,
 				DAFCA1271D7CC28B00F4881E /* GettableProtocol.swift in Sources */,
@@ -528,7 +525,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = Y9GCPAGMBN;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 6E775V5EG9;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
@@ -545,7 +543,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = Y9GCPAGMBN;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 6E775V5EG9;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",

@@ -12,5 +12,8 @@ enum Environment {
     //static let host = "http://localhost:3000/"
     static let host = "https://babosio.herokuapp.com/"
     static let baseURL = "\(host)parse/"
+    static let authHeaders = [
+        "X-Parse-Application-Id": "jmPkI2X4zgwP7M5G74y8u97tJvlCyBAe"
+    ]
 
 }
