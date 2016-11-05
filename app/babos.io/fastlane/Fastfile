@@ -13,7 +13,7 @@
              build_secret: 'c31f49a217a4bed99abc378092f433e86540cbd448a2fbfbc47996f1a866d995',
                    emails: emails,
                    groups: groups,
-                    notes: 'Distributed with fastlane', # Check out the changelog_from_git_commits action
+                    notes: 'Distributed with love', # Check out the changelog_from_git_commits action
             notifications: true) # Should this distribution notify your testers via email?
 
     # for all available options run `fastlane action crashlytics`

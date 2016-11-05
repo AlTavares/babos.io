@@ -67,7 +67,7 @@
 		DA5A1ACF1DAB3222006BBE83 /* RemumeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemumeViewController.swift; sourceTree = "<group>"; };
 		DA5A1AD11DAB329A006BBE83 /* RemumeItemModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemumeItemModel.swift; sourceTree = "<group>"; };
 		DA5A1AD31DAB37D4006BBE83 /* RemumeService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemumeService.swift; sourceTree = "<group>"; };
-		DA5A1AD51DAB3867006BBE83 /* RemumeItemTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RemumeItemTableViewCell.swift; path = ../RemumeItemTableViewCell.swift; sourceTree = "<group>"; };
+		DA5A1AD51DAB3867006BBE83 /* RemumeItemTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemumeItemTableViewCell.swift; sourceTree = "<group>"; };
 		DAA47BDF1DCE686B00DFAF01 /* Answers.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Answers.framework; path = Frameworks/Answers.framework; sourceTree = "<group>"; };
 		DAA47BE01DCE686B00DFAF01 /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Crashlytics.framework; path = Frameworks/Crashlytics.framework; sourceTree = "<group>"; };
 		DAA47BE11DCE686B00DFAF01 /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Fabric.framework; path = Frameworks/Fabric.framework; sourceTree = "<group>"; };
@@ -303,7 +303,7 @@
 				TargetAttributes = {
 					DAFCA0F01D7CBF0200F4881E = {
 						CreatedOnToolsVersion = 7.3.1;
-						DevelopmentTeam = 6E775V5EG9;
+						DevelopmentTeam = Y9GCPAGMBN;
 						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
 					};
@@ -552,7 +552,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = 6E775V5EG9;
+				DEVELOPMENT_TEAM = Y9GCPAGMBN;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
@@ -572,7 +572,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = 6E775V5EG9;
+				DEVELOPMENT_TEAM = Y9GCPAGMBN;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
