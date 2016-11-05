@@ -19,6 +19,9 @@
 		DA5A1AD21DAB329A006BBE83 /* RemumeItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5A1AD11DAB329A006BBE83 /* RemumeItemModel.swift */; };
 		DA5A1AD41DAB37D4006BBE83 /* RemumeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5A1AD31DAB37D4006BBE83 /* RemumeService.swift */; };
 		DA5A1AD61DAB3867006BBE83 /* RemumeItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5A1AD51DAB3867006BBE83 /* RemumeItemTableViewCell.swift */; };
+		DAA47BE21DCE686B00DFAF01 /* Answers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAA47BDF1DCE686B00DFAF01 /* Answers.framework */; };
+		DAA47BE31DCE686B00DFAF01 /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAA47BE01DCE686B00DFAF01 /* Crashlytics.framework */; };
+		DAA47BE41DCE686B00DFAF01 /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAA47BE11DCE686B00DFAF01 /* Fabric.framework */; };
 		DAD003201D876AB600253062 /* RequestExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD0031F1D876AB600253062 /* RequestExtension.swift */; };
 		DAD003221D876D1000253062 /* CacheableProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD003211D876D1000253062 /* CacheableProtocol.swift */; };
 		DAED38BC1D8F2C7900634088 /* Haneke.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAED38BB1D8F2C7900634088 /* Haneke.framework */; };
@@ -65,6 +68,9 @@
 		DA5A1AD11DAB329A006BBE83 /* RemumeItemModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemumeItemModel.swift; sourceTree = "<group>"; };
 		DA5A1AD31DAB37D4006BBE83 /* RemumeService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemumeService.swift; sourceTree = "<group>"; };
 		DA5A1AD51DAB3867006BBE83 /* RemumeItemTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RemumeItemTableViewCell.swift; path = ../RemumeItemTableViewCell.swift; sourceTree = "<group>"; };
+		DAA47BDF1DCE686B00DFAF01 /* Answers.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Answers.framework; path = Frameworks/Answers.framework; sourceTree = "<group>"; };
+		DAA47BE01DCE686B00DFAF01 /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Crashlytics.framework; path = Frameworks/Crashlytics.framework; sourceTree = "<group>"; };
+		DAA47BE11DCE686B00DFAF01 /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Fabric.framework; path = Frameworks/Fabric.framework; sourceTree = "<group>"; };
 		DAD0031F1D876AB600253062 /* RequestExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestExtension.swift; sourceTree = "<group>"; };
 		DAD003211D876D1000253062 /* CacheableProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CacheableProtocol.swift; sourceTree = "<group>"; };
 		DAED38BB1D8F2C7900634088 /* Haneke.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Haneke.framework; path = Carthage/Build/iOS/Haneke.framework; sourceTree = "<group>"; };
@@ -103,6 +109,9 @@
 				DAFCA11E1D7CBF8D00F4881E /* ObjectMapper.framework in Frameworks */,
 				DAED38BC1D8F2C7900634088 /* Haneke.framework in Frameworks */,
 				DA3E136C1D91DFBD00DD4181 /* NibDesignable.framework in Frameworks */,
+				DAA47BE21DCE686B00DFAF01 /* Answers.framework in Frameworks */,
+				DAA47BE31DCE686B00DFAF01 /* Crashlytics.framework in Frameworks */,
+				DAA47BE41DCE686B00DFAF01 /* Fabric.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -198,6 +207,9 @@
 		DAFCA1201D7CC16900F4881E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				DAA47BDF1DCE686B00DFAF01 /* Answers.framework */,
+				DAA47BE01DCE686B00DFAF01 /* Crashlytics.framework */,
+				DAA47BE11DCE686B00DFAF01 /* Fabric.framework */,
 				DA3E136B1D91DFBD00DD4181 /* NibDesignable.framework */,
 				DAED38BB1D8F2C7900634088 /* Haneke.framework */,
 				DAFCA1141D7CBF8D00F4881E /* Alamofire.framework */,
@@ -250,6 +262,7 @@
 				DAFCA0EE1D7CBF0200F4881E /* Frameworks */,
 				DAFCA0EF1D7CBF0200F4881E /* Resources */,
 				DAFCA1351D7CDB4900F4881E /* ShellScript */,
+				DAA47BD61DCC069D00DFAF01 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -342,6 +355,19 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		DAA47BD61DCC069D00DFAF01 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "./Frameworks/Fabric.framework/run 898b701bca272aa30fbf0ca58a7edde0b8a17ec7 c31f49a217a4bed99abc378092f433e86540cbd448a2fbfbc47996f1a866d995";
+		};
 		DAFCA1351D7CDB4900F4881E /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -530,6 +556,8 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Frameworks",
 				);
 				INFOPLIST_FILE = babos.io/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -548,6 +576,8 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Frameworks",
 				);
 				INFOPLIST_FILE = babos.io/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

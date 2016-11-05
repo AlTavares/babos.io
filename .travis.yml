@@ -1,0 +1,11 @@
+language: objective-c
+
+osx_image: xcode8
+
+before_install:
+  - brew update
+  - brew outdated carthage || brew upgrade carthage
+  - carthage bootstrap --platform iOS
+  - xcode-select --install
+  - sudo gem install fastlane
+  - sudo gem install gym

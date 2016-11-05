@@ -19,7 +19,7 @@ struct RemumeService: Gettable, Cacheable {
 
     public func get(_ completionHandler: @escaping (Result<[RemumeItem]>) -> Void) {
         let params = ["order" : "group"]
-        fetch(fromURL: Environment.baseURL + path, fromCache: CacheKeys.RemumeList, parameters: params, encoding: URLEncoding.queryString, headers: Private.authHeaders, completionHandler: completionHandler)
+        fetch(fromURL: Environment.baseURL + path, fromCache: CacheKeys.RemumeList, parameters: params, encoding: URLEncoding.queryString, headers: Environment.authHeaders, completionHandler: completionHandler)
     }
 
 }
