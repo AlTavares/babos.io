@@ -18,6 +18,7 @@ struct Plant: Mappable {
     var precautions: MultiLanguageString!
     var interactionGroups: [String]?
     var references: Reference!
+    var imageUrl: URL?
 
     init?(map: Map) {
 
@@ -32,6 +33,7 @@ struct Plant: Mappable {
         precautions <- map["precautions"]
         interactionGroups <- map["interactionGroups"]
         references <- map["references"]
+        imageUrl <- (map["image_url"], URLTransform())
     }
 }
 

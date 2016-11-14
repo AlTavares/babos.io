@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import Alamofire
+import AlamofireImage
 
 class InteractionsViewController: UIViewController, SearchableDataSource {
     @IBOutlet weak var tableView: UITableView!
@@ -71,6 +73,12 @@ extension InteractionsViewController: UITableViewDataSource, UITableViewDelegate
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         performSegue(withIdentifier: "showInteractionDetail", sender: filterableDataSource.dataSource[indexPath.row])
+    }
+    
+    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        guard let url = filterableDataSource.dataSource[indexPath.row].imageUrl else { return }
+        let cell = cell as! PlantTableViewCell
+        cell.plantImage.af_setImage(withURL: url)
     }
     
 }

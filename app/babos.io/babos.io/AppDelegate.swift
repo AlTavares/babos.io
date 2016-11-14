@@ -19,6 +19,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         Fabric.with([Answers.self, Crashlytics.self])
+        UITabBar.appearance().tintColor = UIColor(red: 147/255, green: 188/255, blue: 62/255, alpha: 1)
         return true
     }
 

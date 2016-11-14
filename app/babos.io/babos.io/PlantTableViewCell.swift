@@ -11,10 +11,12 @@ import UIKit
 class PlantTableViewCell: UITableViewCell {
     @IBOutlet weak var name: UILabel!
     @IBOutlet weak var scientificName: UILabel!
+    @IBOutlet weak var plantImage: UIImageView!
 
     override func prepareForReuse() {
         name.text = ""
         scientificName.text = ""
+        plantImage.image = #imageLiteral(resourceName: "babosa")
     }
     
     func configureCell(plant: Plant){

@@ -10,6 +10,7 @@ import UIKit
 
 class InteractionDetailTableViewController: UITableViewController {
 
+    @IBOutlet weak var plantImage: UIImageView!
     @IBOutlet weak var cardName: CardView!
     @IBOutlet weak var cardScientificName: CardView!
     @IBOutlet weak var cardFamily: CardView!
@@ -32,6 +33,9 @@ class InteractionDetailTableViewController: UITableViewController {
             name = name.substring(to: index)
         }
         navigationItem.title = name
+        if let url = plant.imageUrl {
+            plantImage.af_setImage(withURL: url)
+        }
         cardName.content = plant.name.description
         cardScientificName.content = plant.scientificName.description
         cardFamily.content = plant.family.description
