@@ -33,7 +33,7 @@ struct Plant: Mappable {
         precautions <- map["precautions"]
         interactionGroups <- map["interactionGroups"]
         references <- map["references"]
-        imageUrl <- (map["image_url"], URLTransform())
+        imageUrl <- (map["image.url"], URLTransform())
     }
 }
 
