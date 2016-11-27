@@ -36,8 +36,9 @@ extension SearchableDataSource where Self: UIViewController {
     }
     
     func initSearch(withText text: String?) {
-        if let text = searchController.searchBar.text, text != "" {
+        if let text = searchController.searchBar.text {
             filterableDataSource.filtered = true
+            if text.isEmpty { return }
             filterDataSource(text: text.lowercased())
             return
         }
