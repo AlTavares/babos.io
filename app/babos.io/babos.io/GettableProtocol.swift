@@ -28,6 +28,6 @@ extension Gettable where Self.Data: Mappable {
         let r = request.responseArray(keyPath: "results") { (response: DataResponse<[Data]>) in
             completionHandler(response.result)
         }
-//        debugPrint(r)
+        debugPrint(r)
     }
 }

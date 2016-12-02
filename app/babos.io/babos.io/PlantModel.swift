@@ -18,6 +18,7 @@ struct Plant: Mappable {
     var precautions: MultiLanguageString!
     var interactionGroups: [String]?
     var references: Reference!
+    var deleted: Bool = false
     var imageUrl: URL? {
         guard let url = imageUrlString else { return nil }
         return URL(string: url)
@@ -38,6 +39,7 @@ struct Plant: Mappable {
         interactionGroups <- map["interactionGroups"]
         references <- map["references"]
         imageUrlString <- map["image.url"]
+        deleted <- map["deleted"]
     }
 }
 

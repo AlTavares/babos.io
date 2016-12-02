@@ -22,6 +22,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Nenhuma Interação encontrada" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Npz-Ly-bRE">
+                                <rect key="frame" x="0.0" y="278" width="375" height="44"/>
+                                <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="400" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="hab-Au-FmE">
                                 <rect key="frame" x="0.0" y="20" width="375" height="580"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -41,18 +47,18 @@
                                                         <stackView verifyAmbiguity="off" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" axis="vertical" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="O22-gP-hxb">
                                                             <rect key="frame" x="4" y="0.0" width="351" height="380"/>
                                                             <subviews>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IkE-N4-7S5">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="351" height="248.5"/>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IkE-N4-7S5">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="351" height="58.5"/>
                                                                     <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="18"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
-                                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="254" ambiguous="YES" image="placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="42p-BL-Wsf">
-                                                                    <rect key="frame" x="0.0" y="249.5" width="351" height="110"/>
+                                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="254" image="placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="42p-BL-Wsf">
+                                                                    <rect key="frame" x="0.0" y="59.5" width="351" height="300"/>
                                                                     <constraints>
-                                                                        <constraint firstAttribute="height" constant="110" id="hF2-KE-hZC"/>
+                                                                        <constraint firstAttribute="height" constant="300" id="hF2-KE-hZC"/>
                                                                     </constraints>
                                                                 </imageView>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Aa7-cd-xhx">
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Aa7-cd-xhx">
                                                                     <rect key="frame" x="0.0" y="360.5" width="351" height="19.5"/>
                                                                     <fontDescription key="fontDescription" name="Avenir-BookOblique" family="Avenir" pointSize="14"/>
                                                                     <nil key="textColor"/>
@@ -97,6 +103,8 @@
                         <constraints>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="hab-Au-FmE" secondAttribute="bottom" id="NAd-gP-RXu"/>
                             <constraint firstItem="hab-Au-FmE" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="W1M-cw-Mkw"/>
+                            <constraint firstItem="Npz-Ly-bRE" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="X3R-EB-cVo"/>
+                            <constraint firstItem="Npz-Ly-bRE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="jhn-l4-x5w"/>
                             <constraint firstAttribute="trailing" secondItem="hab-Au-FmE" secondAttribute="trailing" id="jsd-PJ-K07"/>
                             <constraint firstItem="hab-Au-FmE" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="zlL-rG-9si"/>
                         </constraints>
@@ -109,6 +117,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="notFoundLabel" destination="Npz-Ly-bRE" id="dBU-Sg-LT4"/>
                         <outlet property="searchButton" destination="c4A-xa-RPt" id="Arx-b9-hGa"/>
                         <outlet property="tableView" destination="hab-Au-FmE" id="8LX-p5-kKg"/>
                         <segue destination="KLC-na-7rt" kind="show" identifier="showInteractionDetail" id="aU8-qe-o9p"/>

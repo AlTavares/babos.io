@@ -13,6 +13,7 @@ import AlamofireImage
 class InteractionsViewController: UIViewController, SearchableDataSource {
     @IBOutlet weak var tableView: UITableView!
     
+    @IBOutlet weak var notFoundLabel: UILabel!
     var filterableDataSource = FilterableDataSource<Plant>()
     var searchController: UISearchController!
     @IBOutlet weak var searchButton: UIBarButtonItem!
@@ -31,7 +32,8 @@ class InteractionsViewController: UIViewController, SearchableDataSource {
         InteractionsService().get {[weak self] result in
             switch result {
             case .success(let plants):
-                self?.filterableDataSource.dataSource = plants
+                let list = plants.filter{ !$0.deleted }
+                self?.filterableDataSource.dataSource = list
                 self?.tableView.reloadData()
             case .failure(let message):
                 print("failure")
@@ -45,11 +47,17 @@ class InteractionsViewController: UIViewController, SearchableDataSource {
     }
     
     func filterDataSource(text: String) {
+        defer {
+            tableView.reloadData()
+        }
+        guard !text.isEmpty else {
+            return
+        }
         filterableDataSource.filter = { plant in
             return plant.name.description.lowercased().contains(text) ||
                    plant.scientificName.lowercased().contains(text)
         }
-        tableView.reloadData()
+        
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -62,6 +70,7 @@ class InteractionsViewController: UIViewController, SearchableDataSource {
 extension InteractionsViewController: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        self.notFoundLabel.isHidden =  !filterableDataSource.dataSource.isEmpty
         return filterableDataSource.dataSource.count
     }
     

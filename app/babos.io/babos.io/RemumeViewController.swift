@@ -43,12 +43,17 @@ class RemumeViewController: UIViewController, SearchableDataSource {
     }
     
     func filterDataSource(text: String) {
+        defer {
+            tableView.reloadData()
+        }
+        guard !text.isEmpty else {
+            return
+        }
         filterableDataSource.filter = { item in
             return item.group.lowercased().contains(text) ||
                 item.groupDescription.description.lowercased().contains(text) ||
                 self.containsMedication(item: item, searchText: text)
         }
-        tableView.reloadData()
     }
     
     func containsMedication(item: RemumeItem ,searchText: String) -> Bool {
