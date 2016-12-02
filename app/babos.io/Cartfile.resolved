@@ -1,3 +1,4 @@
+github "JanGorman/Agrume" "3.0.3"
 github "Alamofire/Alamofire" "4.0.1"
 github "Haneke/HanekeSwift" "1157a124ec699f4ad926cb054f1d0bfce88ae7a9"
 github "mbogh/NibDesignable" "3.0.0"

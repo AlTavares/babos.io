@@ -16,7 +16,8 @@ class PlantTableViewCell: UITableViewCell {
     override func prepareForReuse() {
         name.text = ""
         scientificName.text = ""
-        plantImage.image = #imageLiteral(resourceName: "babosa")
+        plantImage.image = #imageLiteral(resourceName: "placeholder")
+        
     }
     
     func configureCell(plant: Plant){

@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Agrume
 
 class InteractionDetailTableViewController: UITableViewController {
 
@@ -42,6 +43,8 @@ class InteractionDetailTableViewController: UITableViewController {
         cardParts.content = plant.parts.description
         cardPrecautions.content = plant.precautions.description
         cardInteractions.content = plant.interactions.description
+        let tapImage = UITapGestureRecognizer(target: self, action: #selector(self.openImage(_:)))
+        plantImage.addGestureRecognizer(tapImage)
     }
 
     override func viewWillDisappear(_ animated: Bool) {
@@ -51,6 +54,12 @@ class InteractionDetailTableViewController: UITableViewController {
         return UITableViewAutomaticDimension
     }
     
+    @IBAction func openImage(_ sender: UITapGestureRecognizer) {
+        if let image = plantImage.image {
+            let agrume = Agrume(image: image)
+            agrume.showFrom(self)
+        }
+    }
     
     // MARK: - Navigation
 
